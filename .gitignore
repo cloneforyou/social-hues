@@ -1,2 +1,3 @@
-/matching/venv/
+*.DS_Store/
 *.pyc
+
