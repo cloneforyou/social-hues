@@ -14,4 +14,5 @@ echo 'installing sompy package'
 wget https://github.com/sevamoo/SOMPY/archive/master.zip
 unzip master.zip -d .
 rm master.zip
+python SOMPY-master/setup.py install
 echo ''

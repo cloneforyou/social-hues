@@ -21,6 +21,7 @@ Group4.values[:,1] = (-.1*Group4.values[:,0][:,np.newaxis] + .5*np.random.rand(n
 
 
 all_students = np.concatenate((Group1,Group2,Group3,Group4))
+print(all_students)
 
 fig = plt.figure()
 plt.plot(all_students[:,0],all_students[:,1],'ob',alpha=0.2, markersize=4)
@@ -28,7 +29,7 @@ fig.set_size_inches(7,7)
 
 mapsize = [20,20]
 som = sompy.SOMFactory.build(all_students, mapsize, mask=None, mapshape='planar', lattice='rect', normalization='var', initialization='pca', neighborhood='gaussian', training='batch', name='sompy')  # this will use the default parameters, but i can change the initialization and neighborhood methods
-som.train(n_job=1, verbose='info')  # verbose='debug' will print more, and verbose=None wont print anything
+som.train(n_job=1, verbose='info', train_rough_len=10)  # verbose='debug' will print more, and verbose=None wont print anything
 
 v = sompy.mapview.View2DPacked(50, 50, 'test',text_size=8)  
 # could be done in a one-liner: sompy.mapview.View2DPacked(300, 300, 'test').show(som)

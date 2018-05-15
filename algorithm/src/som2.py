@@ -3,12 +3,11 @@ import pandas as pd
 import numpy as np
 from time import time
 import sompy
-import mock
+import cattells
 
-num_students = 200 # per group of students
-students = mock.make_mock_responses(200, 10, 4)
-students = [[q for q in s.responses] for s in students]
-all_students = np.array(students)
+D = cattells.read_16pf_as_ndarray() # per group of students
+all_students = pd.DataFrame(data=D)
+# print(D)
 # Group1 = pd.DataFrame(data= 1*np.random.rand(num_students,10))
 # Group1.values[:,1] = (Group1.values[:,0][:,np.newaxis] + .42*np.random.rand(num_students,1))[:,0]
 
@@ -32,7 +31,7 @@ all_students = np.array(students)
 
 mapsize = [20,20]
 som = sompy.SOMFactory.build(all_students, mapsize, mask=None, mapshape='planar', lattice='rect', normalization='var', initialization='pca', neighborhood='gaussian', training='batch', name='sompy')  # this will use the default parameters, but i can change the initialization and neighborhood methods
-som.train(n_job=1, verbose='info')  # verbose='debug' will print more, and verbose=None wont print anything
+som.train(n_job=1, verbose='debug')  # verbose='debug' will print more, and verbose=None wont print anything
 
 v = sompy.mapview.View2DPacked(50, 50, 'test',text_size=8)  
 # could be done in a one-liner: sompy.mapview.View2DPacked(300, 300, 'test').show(som)
