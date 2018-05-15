@@ -1,3 +1,5 @@
 *.DS_Store
 *.pyc
+/algorithm/social-hues-venv/*
+/algorithm/SOMPY-master/*
 
