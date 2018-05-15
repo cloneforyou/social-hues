@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo 'creating python virtual environment'
-python -m venv social-hues-venv
+python3 -m venv social-hues-venv
 source social-hues-venv/bin/activate
 echo ''
 
@@ -14,5 +14,7 @@ echo 'installing sompy package'
 wget https://github.com/sevamoo/SOMPY/archive/master.zip
 unzip master.zip -d .
 rm master.zip
-python SOMPY-master/setup.py install
+cd SOMPY-master/
+python3 setup.py install
+cd ..
 echo ''
