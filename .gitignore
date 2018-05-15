@@ -2,4 +2,4 @@
 *.pyc
 /algorithm/social-hues-venv/*
 /algorithm/SOMPY-master/*
-
+.vscode/*
