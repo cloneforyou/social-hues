@@ -1,5 +1,6 @@
-*.DS_Store
+*.DS_Store*
 *.pyc
 /algorithm/social-hues-venv/*
 /algorithm/SOMPY-master/*
 .vscode/*
+*.xcuserdatad*

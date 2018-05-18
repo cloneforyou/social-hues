@@ -3,7 +3,7 @@
 //  Social Hues
 //
 //  Created by Sarah Zhou on 5/14/18.
-//  Copyright © 2018 Sarah Zhou. All rights reserved.
+//  Copyright © 2018 Social Hues. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = OnboardPageViewController()
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

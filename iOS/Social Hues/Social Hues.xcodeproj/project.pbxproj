@@ -8,10 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		37D4159B20ACFDA70027F357 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D4159A20ACFDA70027F357 /* Onboarding.storyboard */; };
-		37D4159E20ACFE8B0027F357 /* OnboardInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 37D4159D20ACFE8B0027F357 /* OnboardInfoView.xib */; };
-		37D415A020AD00A20027F357 /* OnboardInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D4159F20AD00A20027F357 /* OnboardInfoView.swift */; };
+		37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */; };
 		B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BC95D20AA4CB300AC6524 /* AppDelegate.swift */; };
-		B14BC96020AA4CB300AC6524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BC95F20AA4CB300AC6524 /* ViewController.swift */; };
 		B14BC96320AA4CB300AC6524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96120AA4CB300AC6524 /* Main.storyboard */; };
 		B14BC96520AA4CB800AC6524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96420AA4CB800AC6524 /* Assets.xcassets */; };
 		B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96620AA4CB800AC6524 /* LaunchScreen.storyboard */; };
@@ -30,11 +28,9 @@
 
 /* Begin PBXFileReference section */
 		37D4159A20ACFDA70027F357 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
-		37D4159D20ACFE8B0027F357 /* OnboardInfoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardInfoView.xib; sourceTree = "<group>"; };
-		37D4159F20AD00A20027F357 /* OnboardInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardInfoView.swift; sourceTree = "<group>"; };
+		37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPageViewController.swift; sourceTree = "<group>"; };
 		B14BC95A20AA4CB300AC6524 /* Social Hues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Hues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14BC95D20AA4CB300AC6524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B14BC95F20AA4CB300AC6524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B14BC96220AA4CB300AC6524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B14BC96420AA4CB800AC6524 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B14BC96720AA4CB800AC6524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -72,18 +68,9 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		37D4159C20ACFE620027F357 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				37D4159D20ACFE8B0027F357 /* OnboardInfoView.xib */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		B14BC95120AA4CB300AC6524 = {
 			isa = PBXGroup;
 			children = (
-				37D4159C20ACFE620027F357 /* Views */,
 				37D4159920ACFC4D0027F357 /* Storyboards */,
 				B14BC95C20AA4CB300AC6524 /* Social Hues */,
 				B14BC97120AA4CB900AC6524 /* Social HuesTests */,
@@ -104,10 +91,9 @@
 			isa = PBXGroup;
 			children = (
 				B14BC95D20AA4CB300AC6524 /* AppDelegate.swift */,
-				B14BC95F20AA4CB300AC6524 /* ViewController.swift */,
 				B14BC96420AA4CB800AC6524 /* Assets.xcassets */,
 				B14BC96920AA4CB900AC6524 /* Info.plist */,
-				37D4159F20AD00A20027F357 /* OnboardInfoView.swift */,
+				37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */,
 			);
 			path = "Social Hues";
 			sourceTree = "<group>";
@@ -206,7 +192,6 @@
 				B14BC96520AA4CB800AC6524 /* Assets.xcassets in Resources */,
 				B14BC96320AA4CB300AC6524 /* Main.storyboard in Resources */,
 				37D4159B20ACFDA70027F357 /* Onboarding.storyboard in Resources */,
-				37D4159E20ACFE8B0027F357 /* OnboardInfoView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,9 +209,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B14BC96020AA4CB300AC6524 /* ViewController.swift in Sources */,
 				B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */,
-				37D415A020AD00A20027F357 /* OnboardInfoView.swift in Sources */,
+				37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
