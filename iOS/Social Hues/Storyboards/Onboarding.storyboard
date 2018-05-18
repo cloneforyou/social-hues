@@ -95,6 +95,14 @@
             </objects>
             <point key="canvasLocation" x="725.60000000000002" y="897.30134932533736"/>
         </scene>
+        <!--SignUpViewController-->
+        <scene sceneID="8hu-6R-A3y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpViewController" id="jLf-73-idB" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDb-D0-lZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3024" y="777.21139430284859"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="jS9-Ye-mQ3">
             <objects>
@@ -104,7 +112,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="tXs-Nd-ehQ">
-                                <rect key="frame" x="67" y="128" width="240" height="240"/>
+                                <rect key="frame" x="67" y="172" width="240" height="196"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="After the event, review who you met and reach out to hang out again!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odc-Z7-c8X">
                                 <rect key="frame" x="55" y="406" width="264" height="78"/>
@@ -113,18 +121,47 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D03-r8-7jq">
+                                <rect key="frame" x="136" y="558" width="102" height="30"/>
+                                <state key="normal" title="Get Started"/>
+                                <connections>
+                                    <segue destination="jLf-73-idB" kind="show" id="Ryv-Mq-iWp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ISe-DG-mn8" firstAttribute="bottom" secondItem="D03-r8-7jq" secondAttribute="bottom" constant="79" id="AvP-sC-i2j"/>
                             <constraint firstItem="ISe-DG-mn8" firstAttribute="bottom" secondItem="tXs-Nd-ehQ" secondAttribute="bottom" constant="299" id="BcW-QW-L1g"/>
                             <constraint firstItem="tXs-Nd-ehQ" firstAttribute="leading" secondItem="ISe-DG-mn8" secondAttribute="leading" constant="67" id="CYo-Bj-G9h"/>
+                            <constraint firstItem="D03-r8-7jq" firstAttribute="leading" secondItem="ISe-DG-mn8" secondAttribute="leading" constant="136" id="X3h-DR-RaD"/>
                             <constraint firstItem="ISe-DG-mn8" firstAttribute="trailing" secondItem="tXs-Nd-ehQ" secondAttribute="trailing" constant="68" id="ffs-fP-okQ"/>
                             <constraint firstItem="tXs-Nd-ehQ" firstAttribute="top" secondItem="ISe-DG-mn8" secondAttribute="top" constant="108" id="hXk-UG-R3I"/>
+                            <constraint firstItem="ISe-DG-mn8" firstAttribute="trailing" secondItem="D03-r8-7jq" secondAttribute="trailing" constant="137" id="n9o-4r-6PC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ISe-DG-mn8"/>
                     </view>
+                    <navigationItem key="navigationItem" id="nCh-F8-NU4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pj6-9S-43e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2298.4000000000001" y="897.30134932533736"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jfd-s4-M6L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wFl-m4-CsR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0eK-TZ-bEH">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="XRd-bR-OI0" kind="relationship" relationship="rootViewController" id="ScT-YZ-bht"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HXh-5e-9AF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1359.2" y="897.30134932533736"/>
         </scene>

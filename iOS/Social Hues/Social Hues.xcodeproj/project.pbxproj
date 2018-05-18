@@ -78,9 +78,17 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		37D415AD20AECF060027F357 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		B14BC95120AA4CB300AC6524 = {
 			isa = PBXGroup;
 			children = (
+				37D415AD20AECF060027F357 /* Model */,
 				37D4159920ACFC4D0027F357 /* Storyboards */,
 				B14BC95C20AA4CB300AC6524 /* Social Hues */,
 				B14BC97120AA4CB900AC6524 /* Social HuesTests */,

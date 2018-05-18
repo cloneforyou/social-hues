@@ -10,6 +10,17 @@ import UIKit
 
 // OnboardPageView Controller controls the onboarding pages found in the Onboarding storyboard
 class OnboardPageViewController : UIPageViewController {
+    
+
+    @IBAction func getStarted(_ sender: UIButton) {
+        //let storyboard: UIStoryboard = UIStoryboard(name: "Onboarding", bundle:nil)
+        let signupVC = self.storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
+        self.present(signupVC, animated: true, completion: nil)
+        //setViewControllers([signupVC], direction: .forward, animated: true)
+        //self.navigationController.pushViewController(secondViewController, animated: true)
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
