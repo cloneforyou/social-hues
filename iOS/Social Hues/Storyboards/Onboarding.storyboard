@@ -125,7 +125,7 @@
                                 <rect key="frame" x="136" y="558" width="102" height="30"/>
                                 <state key="normal" title="Get Started"/>
                                 <connections>
-                                    <segue destination="jLf-73-idB" kind="show" id="Ryv-Mq-iWp"/>
+                                    <segue destination="jLf-73-idB" kind="show" id="fhO-ZV-xl5"/>
                                 </connections>
                             </button>
                         </subviews>

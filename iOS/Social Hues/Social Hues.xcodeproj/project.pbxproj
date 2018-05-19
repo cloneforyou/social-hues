@@ -13,6 +13,8 @@
 		37D415A620AEB55A0027F357 /* ConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415A520AEB55A0027F357 /* ConvoViewController.swift */; };
 		37D415AA20AEB6510027F357 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415A920AEB6510027F357 /* SignUp.storyboard */; };
 		37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415AB20AEB66F0027F357 /* SignUpViewController.swift */; };
+		37D415B020B0C2D80027F357 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415AF20B0C2D80027F357 /* AddEventView.swift */; };
+		37D415B320B0D0F20027F357 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B220B0D0F10027F357 /* UIColorEx.swift */; };
 		AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA70E7F720AFA70900C36A88 /* Events.storyboard */; };
 		AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */; };
 		AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */; };
@@ -40,6 +42,8 @@
 		37D415A520AEB55A0027F357 /* ConvoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvoViewController.swift; sourceTree = "<group>"; };
 		37D415A920AEB6510027F357 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		37D415AB20AEB66F0027F357 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		37D415AF20B0C2D80027F357 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
+		37D415B220B0D0F10027F357 /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
 		AA70E7F720AFA70900C36A88 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -92,9 +96,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		37D415AE20B0C2C40027F357 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37D415AF20B0C2D80027F357 /* AddEventView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		37D415B120B0D0E00027F357 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				37D415B220B0D0F10027F357 /* UIColorEx.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		B14BC95120AA4CB300AC6524 = {
 			isa = PBXGroup;
 			children = (
+				37D415B120B0D0E00027F357 /* Util */,
+				37D415AE20B0C2C40027F357 /* Views */,
 				37D415AD20AECF060027F357 /* Model */,
 				37D4159920ACFC4D0027F357 /* Storyboards */,
 				B14BC95C20AA4CB300AC6524 /* Social Hues */,
@@ -242,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */,
+				37D415B020B0C2D80027F357 /* AddEventView.swift in Sources */,
 				AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */,
 				37D415A620AEB55A0027F357 /* ConvoViewController.swift in Sources */,
+				37D415B320B0D0F20027F357 /* UIColorEx.swift in Sources */,
 				37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */,
 				37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */,
 				AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */,

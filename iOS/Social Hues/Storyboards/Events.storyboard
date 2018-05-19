@@ -65,7 +65,7 @@
                     <navigationItem key="navigationItem" title="Upcoming" id="Vj2-dK-ceR">
                         <barButtonItem key="rightBarButtonItem" image="AddEvent" id="1fs-Qv-qL1">
                             <connections>
-                                <segue destination="VMt-U9-Hgg" kind="presentation" id="ald-bX-ytB"/>
+                                <segue destination="Ye5-YU-Kfh" kind="presentation" id="arb-E9-kBs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -74,20 +74,47 @@
             </objects>
             <point key="canvasLocation" x="3490.4000000000001" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Zk7-2d-DaV">
+        <!--Add Event View Controller-->
+        <scene sceneID="C27-XW-PUQ">
             <objects>
-                <viewController id="VMt-U9-Hgg" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kmo-dN-eml">
+                <viewController id="Ye5-YU-Kfh" customClass="AddEventViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fc2-ku-p1e">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uY1-9R-yI1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="emo-SZ-Eof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4284" y="124"/>
+        </scene>
+        <!--Add Event View Controller-->
+        <scene sceneID="Zk7-2d-DaV">
+            <objects>
+                <viewController id="VMt-U9-Hgg" customClass="AddEventViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kmo-dN-eml">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-Zf-mhS" customClass="AddEventView" customModule="Social_Hues" customModuleProvider="target">
+                                <rect key="frame" x="33" y="161" width="309" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mgB-UF-heP"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wk2-v5-HHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4205.6000000000004" y="123.68815592203899"/>
+            <point key="canvasLocation" x="5047" y="124"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="JaB-2a-Haw">
@@ -129,6 +156,7 @@
                 <tabBarController storyboardIdentifier="Events" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yfG-by-phh" customClass="EventsViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="22x-Ac-Vnt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -140,6 +168,13 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga1-Wh-ofD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1599.2" y="-228.93553223388307"/>
+        </scene>
+        <!--Storyboard Reference-->
+        <scene sceneID="udF-TE-pQv">
+            <objects>
+                <viewControllerPlaceholder id="vM3-8Q-Yf9" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6JE-k8-VwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
