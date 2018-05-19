@@ -23,6 +23,7 @@
 		B14BC96520AA4CB800AC6524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96420AA4CB800AC6524 /* Assets.xcassets */; };
 		B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96620AA4CB800AC6524 /* LaunchScreen.storyboard */; };
 		B14BC97320AA4CB900AC6524 /* Social_HuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BC97220AA4CB900AC6524 /* Social_HuesTests.swift */; };
+		B193664720B0E9BD003B329E /* FONT in Resources */ = {isa = PBXBuildFile; fileRef = B193664620B0E9BB003B329E /* FONT */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		B14BC96E20AA4CB900AC6524 /* Social HuesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Social HuesTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14BC97220AA4CB900AC6524 /* Social_HuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social_HuesTests.swift; sourceTree = "<group>"; };
 		B14BC97420AA4CB900AC6524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B193664620B0E9BB003B329E /* FONT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FONT; path = "../../../../../../Downloads/final assets/FONT"; sourceTree = "<group>"; };
+		B193664820B0EAA3003B329E /* FONT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FONT; path = "../../../../../Downloads/final assets/FONT"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,7 @@
 		B14BC95120AA4CB300AC6524 = {
 			isa = PBXGroup;
 			children = (
+				B193664820B0EAA3003B329E /* FONT */,
 				37D415B120B0D0E00027F357 /* Util */,
 				37D415AE20B0C2C40027F357 /* Views */,
 				37D415AD20AECF060027F357 /* Model */,
@@ -138,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B14BC95D20AA4CB300AC6524 /* AppDelegate.swift */,
+				B193664620B0E9BB003B329E /* FONT */,
 				B14BC96420AA4CB800AC6524 /* Assets.xcassets */,
 				B14BC96920AA4CB900AC6524 /* Info.plist */,
 				37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */,
@@ -239,6 +244,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B193664720B0E9BD003B329E /* FONT in Resources */,
 				B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */,
 				37D415A420AEB43F0027F357 /* Convo.storyboard in Resources */,
 				AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */,
