@@ -112,16 +112,29 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		37D415B420B0EBA10027F357 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */,
+				37D415A520AEB55A0027F357 /* ConvoViewController.swift */,
+				37D415AB20AEB66F0027F357 /* SignUpViewController.swift */,
+				AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */,
+				AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		B14BC95120AA4CB300AC6524 = {
 			isa = PBXGroup;
 			children = (
-				37D415B120B0D0E00027F357 /* Util */,
-				37D415AE20B0C2C40027F357 /* Views */,
 				37D415AD20AECF060027F357 /* Model */,
-				37D4159920ACFC4D0027F357 /* Storyboards */,
+				B14BC95B20AA4CB300AC6524 /* Products */,
 				B14BC95C20AA4CB300AC6524 /* Social Hues */,
 				B14BC97120AA4CB900AC6524 /* Social HuesTests */,
-				B14BC95B20AA4CB300AC6524 /* Products */,
+				37D4159920ACFC4D0027F357 /* Storyboards */,
+				37D415B120B0D0E00027F357 /* Util */,
+				37D415B420B0EBA10027F357 /* ViewControllers */,
+				37D415AE20B0C2C40027F357 /* Views */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,11 +153,6 @@
 				B14BC95D20AA4CB300AC6524 /* AppDelegate.swift */,
 				B14BC96420AA4CB800AC6524 /* Assets.xcassets */,
 				B14BC96920AA4CB900AC6524 /* Info.plist */,
-				37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */,
-				37D415A520AEB55A0027F357 /* ConvoViewController.swift */,
-				37D415AB20AEB66F0027F357 /* SignUpViewController.swift */,
-				AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */,
-				AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */,
 			);
 			path = "Social Hues";
 			sourceTree = "<group>";
