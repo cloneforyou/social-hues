@@ -2,7 +2,7 @@
 //  ConvoViewController.swift
 //  Social Hues
 //
-//  Created by Daniel Kim on 5/18/18.
+//  Created by Sarah Zhou on  5/19/18
 //  Copyright © 2018 Social Hues. All rights reserved.
 //
 
