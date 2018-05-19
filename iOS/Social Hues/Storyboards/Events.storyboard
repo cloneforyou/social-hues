@@ -65,9 +65,7 @@
                     <navigationItem key="navigationItem" title="Upcoming" id="Vj2-dK-ceR">
                         <barButtonItem key="rightBarButtonItem" image="AddEvent" id="1fs-Qv-qL1">
                             <connections>
-                                <segue destination="VMt-U9-Hgg" kind="popoverPresentation" popoverAnchorBarButtonItem="1fs-Qv-qL1" id="aKJ-6K-U2e">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <segue destination="VMt-U9-Hgg" kind="presentation" id="ald-bX-ytB"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,72 +81,6 @@
                     <view key="view" contentMode="scaleToFill" id="Kmo-dN-eml">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hdi-VU-w2q">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="lOq-Ox-pXJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <subviews>
-                                        <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mRa-FD-Xej">
-                                            <rect key="frame" x="25" y="143" width="324" height="255"/>
-                                            <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xrz-1A-R2d">
-                                                    <rect key="frame" x="16" y="4" width="14" height="22"/>
-                                                    <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZaD-Wc-I36">
-                                                            <rect key="frame" x="0.0" y="0.0" width="14" height="22"/>
-                                                            <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="P5i-qP-HR9">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="22"/>
-                                                                    <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AeQ-D5-15o">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="14" height="22"/>
-                                                                            <subviews>
-                                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="K7G-wv-Ela">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="22"/>
-                                                                                    <subviews>
-                                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ni8-OQ-2IM">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="14" height="22"/>
-                                                                                            <subviews>
-                                                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sE0-l9-cub">
-                                                                                                    <rect key="frame" x="0.0" y="0.0" width="14" height="22"/>
-                                                                                                    <state key="normal" image="CloseModal"/>
-                                                                                                </button>
-                                                                                            </subviews>
-                                                                                        </stackView>
-                                                                                    </subviews>
-                                                                                </stackView>
-                                                                            </subviews>
-                                                                        </stackView>
-                                                                    </subviews>
-                                                                </stackView>
-                                                            </subviews>
-                                                        </stackView>
-                                                    </subviews>
-                                                </stackView>
-                                            </subviews>
-                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="xrz-1A-R2d" secondAttribute="trailing" constant="294" id="Lju-Rd-LlB"/>
-                                                <constraint firstAttribute="bottom" secondItem="xrz-1A-R2d" secondAttribute="bottom" constant="229" id="U5G-Xq-dDK"/>
-                                                <constraint firstItem="xrz-1A-R2d" firstAttribute="top" secondItem="mRa-FD-Xej" secondAttribute="top" constant="4" id="lme-y2-Vdl"/>
-                                                <constraint firstItem="xrz-1A-R2d" firstAttribute="leading" secondItem="mRa-FD-Xej" secondAttribute="leading" constant="16" id="vJ5-45-IKq"/>
-                                            </constraints>
-                                        </view>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <constraints>
-                                        <constraint firstItem="mRa-FD-Xej" firstAttribute="top" secondItem="lOq-Ox-pXJ" secondAttribute="top" constant="143" id="5Mv-f3-Qjs"/>
-                                        <constraint firstAttribute="bottom" secondItem="mRa-FD-Xej" secondAttribute="bottom" constant="269" id="A8l-ZZ-Ix6"/>
-                                        <constraint firstAttribute="trailing" secondItem="mRa-FD-Xej" secondAttribute="trailing" constant="26" id="Xcl-1B-cal"/>
-                                        <constraint firstItem="mRa-FD-Xej" firstAttribute="leading" secondItem="lOq-Ox-pXJ" secondAttribute="leading" constant="25" id="ajD-Rx-cyT"/>
-                                    </constraints>
-                                </view>
-                                <blurEffect style="light"/>
-                            </visualEffectView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mgB-UF-heP"/>
                     </view>
@@ -212,6 +144,5 @@
     </scenes>
     <resources>
         <image name="AddEvent" width="19" height="19"/>
-        <image name="CloseModal" width="14" height="14"/>
     </resources>
 </document>
