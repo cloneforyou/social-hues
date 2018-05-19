@@ -13,6 +13,9 @@
 		37D415A620AEB55A0027F357 /* ConvoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415A520AEB55A0027F357 /* ConvoViewController.swift */; };
 		37D415AA20AEB6510027F357 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415A920AEB6510027F357 /* SignUp.storyboard */; };
 		37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415AB20AEB66F0027F357 /* SignUpViewController.swift */; };
+		AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA70E7F720AFA70900C36A88 /* Events.storyboard */; };
+		AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */; };
+		AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */; };
 		B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BC95D20AA4CB300AC6524 /* AppDelegate.swift */; };
 		B14BC96320AA4CB300AC6524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96120AA4CB300AC6524 /* Main.storyboard */; };
 		B14BC96520AA4CB800AC6524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96420AA4CB800AC6524 /* Assets.xcassets */; };
@@ -37,6 +40,9 @@
 		37D415A520AEB55A0027F357 /* ConvoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvoViewController.swift; sourceTree = "<group>"; };
 		37D415A920AEB6510027F357 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		37D415AB20AEB66F0027F357 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		AA70E7F720AFA70900C36A88 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
+		AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		B14BC95A20AA4CB300AC6524 /* Social Hues.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Social Hues.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B14BC95D20AA4CB300AC6524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B14BC96220AA4CB300AC6524 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,6 +80,7 @@
 				37D4159A20ACFDA70027F357 /* Onboarding.storyboard */,
 				37D415A320AEB43F0027F357 /* Convo.storyboard */,
 				37D415A920AEB6510027F357 /* SignUp.storyboard */,
+				AA70E7F720AFA70900C36A88 /* Events.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -114,6 +121,8 @@
 				37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */,
 				37D415A520AEB55A0027F357 /* ConvoViewController.swift */,
 				37D415AB20AEB66F0027F357 /* SignUpViewController.swift */,
+				AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */,
+				AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */,
 			);
 			path = "Social Hues";
 			sourceTree = "<group>";
@@ -210,6 +219,7 @@
 			files = (
 				B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */,
 				37D415A420AEB43F0027F357 /* Convo.storyboard in Resources */,
+				AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */,
 				37D415AA20AEB6510027F357 /* SignUp.storyboard in Resources */,
 				B14BC96520AA4CB800AC6524 /* Assets.xcassets in Resources */,
 				B14BC96320AA4CB300AC6524 /* Main.storyboard in Resources */,
@@ -232,9 +242,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */,
+				AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */,
 				37D415A620AEB55A0027F357 /* ConvoViewController.swift in Sources */,
 				37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */,
 				37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */,
+				AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

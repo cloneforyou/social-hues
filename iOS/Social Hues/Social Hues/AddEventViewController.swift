@@ -1,5 +1,5 @@
 //
-//  ConvoViewController.swift
+//  AddEventViewController.swift
 //  Social Hues
 //
 //  Created by Daniel Kim on 5/18/18.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class ConvoViewControler : UIViewController {
+class AddEventViewController : UIViewController {
     
 }

@@ -57,14 +57,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqq-nz-DjL">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqq-nz-DjL">
                                 <rect key="frame" x="154" y="574" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <segue destination="WUe-TL-O1k" kind="show" id="vJp-c6-eC1"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="mqq-nz-DjL" firstAttribute="top" secondItem="hof-Rn-JY7" secondAttribute="bottom" constant="70" id="1Ui-Dc-0kA"/>
                             <constraint firstItem="hof-Rn-JY7" firstAttribute="top" secondItem="sgO-vq-Dux" secondAttribute="bottom" constant="25" id="3lY-U1-lRV"/>
                             <constraint firstItem="t86-u0-mxx" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="119" id="5Ts-wd-XpY"/>
                             <constraint firstItem="sgO-vq-Dux" firstAttribute="top" secondItem="iTH-jW-pDQ" secondAttribute="bottom" constant="25" id="5V5-Xw-vbu"/>
@@ -74,6 +77,7 @@
                             <constraint firstItem="sgO-vq-Dux" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="F5L-sN-KJa"/>
                             <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="tCw-KU-TyH" secondAttribute="trailing" constant="62" id="Q4S-g1-frl"/>
                             <constraint firstItem="5M6-41-uWf" firstAttribute="top" secondItem="Ht3-Mg-zOv" secondAttribute="top" constant="56" id="Sey-do-re2"/>
+                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="mqq-nz-DjL" secondAttribute="trailing" constant="166" id="Smv-Yj-epi"/>
                             <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="iTH-jW-pDQ" secondAttribute="trailing" constant="62" id="WaV-uy-tbn"/>
                             <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="sgO-vq-Dux" secondAttribute="trailing" constant="62" id="XKC-bK-Mxo"/>
                             <constraint firstItem="Ht3-Mg-zOv" firstAttribute="bottom" secondItem="t86-u0-mxx" secondAttribute="bottom" constant="442" id="dJA-Ht-icg"/>
@@ -85,9 +89,11 @@
                             <constraint firstItem="Ht3-Mg-zOv" firstAttribute="bottom" secondItem="5M6-41-uWf" secondAttribute="bottom" constant="471" id="jYk-qx-gKf"/>
                             <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="5M6-41-uWf" secondAttribute="trailing" constant="128" id="qrw-CA-NsG"/>
                             <constraint firstItem="iTH-jW-pDQ" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="rek-ql-ziy"/>
+                            <constraint firstItem="mqq-nz-DjL" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="154" id="rvg-Ke-JDD"/>
                             <constraint firstItem="t86-u0-mxx" firstAttribute="top" secondItem="Ht3-Mg-zOv" secondAttribute="top" constant="184" id="rwH-gb-g7h"/>
                             <constraint firstItem="tCw-KU-TyH" firstAttribute="top" secondItem="t86-u0-mxx" secondAttribute="bottom" constant="29" id="tga-67-bkw"/>
                             <constraint firstItem="tCw-KU-TyH" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="xEn-VP-L5T"/>
+                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="bottom" secondItem="mqq-nz-DjL" secondAttribute="bottom" constant="63" id="y5B-mq-3XT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ht3-Mg-zOv"/>
                     </view>
@@ -95,6 +101,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoc-7e-MF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="144.3778110944528"/>
+        </scene>
+        <!--Events-->
+        <scene sceneID="IIK-6H-Zml">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Events" referencedIdentifier="Events" id="WUe-TL-O1k" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c5n-tQ-m5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="209"/>
         </scene>
     </scenes>
     <resources>
