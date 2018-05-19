@@ -95,10 +95,10 @@
             </objects>
             <point key="canvasLocation" x="725.60000000000002" y="897.30134932533736"/>
         </scene>
-        <!--SignUpViewController-->
+        <!--SignUp-->
         <scene sceneID="8hu-6R-A3y">
             <objects>
-                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUpViewController" id="jLf-73-idB" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="SignUp" referencedIdentifier="SignUp" id="jLf-73-idB" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDb-D0-lZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3024" y="777.21139430284859"/>
