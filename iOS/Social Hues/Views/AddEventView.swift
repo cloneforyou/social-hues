@@ -10,10 +10,14 @@ import UIKit
 
 @IBDesignable
 class AddEventView: UIView {
-    var closeButton = UIButton()
+    var closeButton: UIButton
+    var delegate: AddEventViewDelegate?
     
-    override init(frame: CGRect) {
+    init(frame: CGRect, addEventDelegate: AddEventViewDelegate) {
+        self.closeButton = UIButton()
+        self.delegate = addEventDelegate
         super.init(frame: frame)
+        
         self.backgroundColor = .white
         layer.cornerRadius = 13
         layer.masksToBounds = true
@@ -22,10 +26,17 @@ class AddEventView: UIView {
         closeButton.setImage(closeImage, for: .normal)
         closeButton.backgroundColor = .white
         closeButton.frame = CGRect(x: self.bounds.maxX - 41, y: self.bounds.minY + 24, width: 17, height: 17)
+        closeButton.addTarget(self, action: #selector(closePressed(sender:)), for: .touchUpInside)
         self.addSubview(closeButton)
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.closeButton = UIButton()
         super.init(coder: aDecoder)
+    }
+    
+    @objc fileprivate func closePressed(sender: UIButton) {
+        print("asdfadslkj")
+        delegate?.closeAddEventPopup()
     }
 }

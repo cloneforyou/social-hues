@@ -9,5 +9,5 @@
 import UIKit
 
 class EventsViewController : UITabBarController {
-    
+    @IBAction func unwindToEvents(segue:UIStoryboardSegue) { }
 }
