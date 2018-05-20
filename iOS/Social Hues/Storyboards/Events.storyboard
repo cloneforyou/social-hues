@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,7 +41,7 @@
         <!--Upcoming-->
         <scene sceneID="lH2-r6-cIA">
             <objects>
-                <tableViewController id="rOg-7N-Kah" sceneMemberID="viewController">
+                <tableViewController id="rOg-7N-Kah" customClass="EventsTableViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OcX-8W-1aU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,7 +64,7 @@
                     <navigationItem key="navigationItem" title="Upcoming" id="Vj2-dK-ceR">
                         <barButtonItem key="rightBarButtonItem" image="AddEvent" id="1fs-Qv-qL1">
                             <connections>
-                                <segue destination="Ye5-YU-Kfh" kind="presentation" id="EIe-KM-p6k"/>
+                                <action selector="addButtonPressed:" destination="rOg-7N-Kah" id="hKb-ES-u7y"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -73,26 +72,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kLO-z2-5VT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3490.4000000000001" y="123.68815592203899"/>
-        </scene>
-        <!--Add Event View Controller-->
-        <scene sceneID="C27-XW-PUQ">
-            <objects>
-                <viewController id="Ye5-YU-Kfh" customClass="AddEventViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Fc2-ku-p1e">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="uY1-9R-yI1"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="ha7-Xu-MdB"/>
-                    <connections>
-                        <segue destination="jQj-GU-ZvX" kind="unwind" identifier="returnToEvents" unwindAction="unwindToEventsWithSegue:" id="BgV-pd-N7n"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="emo-SZ-Eof" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="jQj-GU-ZvX" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="4284" y="124"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="JaB-2a-Haw">

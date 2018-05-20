@@ -10,10 +10,21 @@ import UIKit
 
 protocol AddEventViewDelegate {
     func closeAddEventPopup()
+    func addEventButtonPressed(code: String)
 }
 
 class AddEventViewController : UIViewController {
     var popup: AddEventView?
+    var delegate: EventsTableViewControllerDelegate?
+    
+    init(delegate: EventsTableViewControllerDelegate) {
+        super.init(nibName: nil, bundle: nil)
+        self.delegate = delegate
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder:aDecoder)
+    }
     
     open override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,12 +48,11 @@ class AddEventViewController : UIViewController {
 
 extension AddEventViewController : AddEventViewDelegate {
     func closeAddEventPopup() {
-        //performSegue(withIdentifier: "returnToEvents", sender: self)
-        //print("close")
-        //self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
-    func addEventButtonPressed() {
+    func addEventButtonPressed(code: String) {
+        self.delegate?.addEvent(code: code)
         self.dismiss(animated: true, completion: nil)
         // TODO: add event sent to servers
         // TODO: event added confirmation
