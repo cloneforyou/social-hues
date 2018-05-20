@@ -15,6 +15,7 @@
 		37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415AB20AEB66F0027F357 /* SignUpViewController.swift */; };
 		37D415B020B0C2D80027F357 /* AddEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415AF20B0C2D80027F357 /* AddEventView.swift */; };
 		37D415B320B0D0F20027F357 /* UIColorEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B220B0D0F10027F357 /* UIColorEx.swift */; };
+		37D415B620B151550027F357 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B520B151540027F357 /* EventsTableViewController.swift */; };
 		AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA70E7F720AFA70900C36A88 /* Events.storyboard */; };
 		AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */; };
 		AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */; };
@@ -45,6 +46,7 @@
 		37D415AB20AEB66F0027F357 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		37D415AF20B0C2D80027F357 /* AddEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventView.swift; sourceTree = "<group>"; };
 		37D415B220B0D0F10027F357 /* UIColorEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorEx.swift; sourceTree = "<group>"; };
+		37D415B520B151540027F357 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		AA70E7F720AFA70900C36A88 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				37D415AB20AEB66F0027F357 /* SignUpViewController.swift */,
 				AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */,
 				AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */,
+				37D415B520B151540027F357 /* EventsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 			files = (
 				B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */,
 				37D415B020B0C2D80027F357 /* AddEventView.swift in Sources */,
+				37D415B620B151550027F357 /* EventsTableViewController.swift in Sources */,
 				AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */,
 				37D415A620AEB55A0027F357 /* ConvoPageViewController.swift in Sources */,
 				37D415B320B0D0F20027F357 /* UIColorEx.swift in Sources */,

@@ -27,6 +27,7 @@ class AddEventViewController : UIViewController {
         self.popup = newPopup
         self.view.addSubview(popup!)
         
+        
     }
     
 //    @IBAction func goBackToOneButtonTapped(_ sender: Any) {
@@ -39,7 +40,13 @@ extension AddEventViewController : AddEventViewDelegate {
         //performSegue(withIdentifier: "returnToEvents", sender: self)
         //print("close")
         //self.navigationController?.popViewController(animated: true)
+    }
+    
+    func addEventButtonPressed() {
         self.dismiss(animated: true, completion: nil)
+        // TODO: add event sent to servers
+        // TODO: event added confirmation
+        // TODO: refresh event list
     }
 }
 

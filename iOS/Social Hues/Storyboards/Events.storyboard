@@ -43,16 +43,16 @@
         <scene sceneID="lH2-r6-cIA">
             <objects>
                 <tableViewController id="rOg-7N-Kah" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OcX-8W-1aU">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="OcX-8W-1aU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="iIz-Ve-IRq">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="jeQ-2a-9Td">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iIz-Ve-IRq" id="ULT-0D-Ggw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jeQ-2a-9Td" id="OD6-NA-6Gp">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -65,7 +65,7 @@
                     <navigationItem key="navigationItem" title="Upcoming" id="Vj2-dK-ceR">
                         <barButtonItem key="rightBarButtonItem" image="AddEvent" id="1fs-Qv-qL1">
                             <connections>
-                                <segue destination="Ye5-YU-Kfh" kind="presentation" id="arb-E9-kBs"/>
+                                <segue destination="Ye5-YU-Kfh" kind="presentation" id="EIe-KM-p6k"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -84,6 +84,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="uY1-9R-yI1"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ha7-Xu-MdB"/>
                     <connections>
                         <segue destination="jQj-GU-ZvX" kind="unwind" identifier="returnToEvents" unwindAction="unwindToEventsWithSegue:" id="BgV-pd-N7n"/>
                     </connections>
@@ -92,33 +93,6 @@
                 <exit id="jQj-GU-ZvX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4284" y="124"/>
-        </scene>
-        <!--Add Event View Controller-->
-        <scene sceneID="Zk7-2d-DaV">
-            <objects>
-                <viewController id="VMt-U9-Hgg" customClass="AddEventViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kmo-dN-eml">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ga-Zf-mhS" customClass="AddEventView" customModule="Social_Hues" customModuleProvider="target">
-                                <rect key="frame" x="33" y="161" width="309" height="228"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="13"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="mgB-UF-heP"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Wk2-v5-HHH" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5047" y="124"/>
         </scene>
         <!--Upcoming-->
         <scene sceneID="JaB-2a-Haw">
