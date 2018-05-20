@@ -37,7 +37,7 @@ class AddEventViewController : UIViewController {
 extension AddEventViewController : AddEventViewDelegate {
     func closeAddEventPopup() {
         //performSegue(withIdentifier: "returnToEvents", sender: self)
-        print("close")
+        //print("close")
         //self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
     }
