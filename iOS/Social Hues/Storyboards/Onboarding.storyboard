@@ -9,6 +9,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Bold.otf">
+            <string>CircularStd-Bold</string>
+        </array>
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Onboard Page View Controller-->
         <scene sceneID="pbz-G8-y2W">
@@ -24,31 +32,44 @@
                 <viewController storyboardIdentifier="OnboardOne" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BeS-Uq-Ogr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MwS-gm-knX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="OnboardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="nSn-r5-mRg">
-                                <rect key="frame" x="67" y="128" width="240" height="240"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardOneImage" translatesAutoresizingMaskIntoConstraints="NO" id="YV9-Qg-zC1">
-                                <rect key="frame" x="137" y="199" width="100" height="99"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fill out a quick survey based on the event you're planning to attend" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDW-li-adv">
-                                <rect key="frame" x="55" y="392" width="264" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Keep track of and stay updated on events you're signed up for" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDW-li-adv">
+                                <rect key="frame" x="74" y="388" width="229" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="onboaring 1 illustration" translatesAutoresizingMaskIntoConstraints="NO" id="ihy-hZ-hjj">
+                                <rect key="frame" x="95" y="120" width="187" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BEFORE THE EVENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jgn-kR-Jdv">
+                                <rect key="frame" x="87" y="355" width="203" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="L4M-XX-9d9">
+                                <rect key="frame" x="184" y="564" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="rHF-3n-ev4">
+                                <rect key="frame" x="256" y="564" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination filled" translatesAutoresizingMaskIntoConstraints="NO" id="2rf-of-8AJ">
+                                <rect key="frame" x="112" y="564" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="skip button" translatesAutoresizingMaskIntoConstraints="NO" id="FRO-yQ-qQI">
+                                <rect key="frame" x="282" y="30" width="67" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="aba-EG-jem" firstAttribute="bottom" secondItem="YV9-Qg-zC1" secondAttribute="bottom" constant="369" id="3Ce-1L-GRS"/>
-                            <constraint firstItem="YV9-Qg-zC1" firstAttribute="top" secondItem="aba-EG-jem" secondAttribute="top" constant="179" id="CQw-Mj-icV"/>
-                            <constraint firstItem="aba-EG-jem" firstAttribute="trailing" secondItem="YV9-Qg-zC1" secondAttribute="trailing" constant="138" id="F9a-t6-ltB"/>
-                            <constraint firstItem="YV9-Qg-zC1" firstAttribute="leading" secondItem="aba-EG-jem" secondAttribute="leading" constant="137" id="c3Y-0r-6BU"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="aba-EG-jem"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztu-Mo-ZRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -61,34 +82,44 @@
                 <viewController storyboardIdentifier="OnboardTwo" modalTransitionStyle="crossDissolve" id="emC-8a-spm" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XYj-fR-aqK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="etc-Jl-tp3">
-                                <rect key="frame" x="67" y="128" width="240" height="240"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="BLM-Dz-eV8">
+                                <rect key="frame" x="112" y="564" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardTwoImage" translatesAutoresizingMaskIntoConstraints="NO" id="tsO-ZF-gcv">
-                                <rect key="frame" x="137" y="198" width="100" height="100"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="jPE-hQ-8y6">
+                                <rect key="frame" x="256" y="564" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At the event, meet new people in a fun and original way" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iea-RK-iza">
-                                <rect key="frame" x="55" y="398" width="264" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination filled" translatesAutoresizingMaskIntoConstraints="NO" id="4Dp-aH-Sf3">
+                                <rect key="frame" x="184" y="564" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="skip button" translatesAutoresizingMaskIntoConstraints="NO" id="cCd-9l-rs9">
+                                <rect key="frame" x="282" y="30" width="67" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="onboaring 2 illustration" translatesAutoresizingMaskIntoConstraints="NO" id="a0p-PC-PVW">
+                                <rect key="frame" x="94" y="102" width="187" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="AT THE EVENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHC-D8-O7R">
+                                <rect key="frame" x="87" y="355" width="203" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" text="Make socializing less awkward through matching and timed prompts" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xtn-vk-5kK">
+                                <rect key="frame" x="72" y="389" width="234" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="gyx-XR-Dge" firstAttribute="trailing" secondItem="tsO-ZF-gcv" secondAttribute="trailing" constant="138" id="6g3-yF-jlI"/>
-                            <constraint firstItem="tsO-ZF-gcv" firstAttribute="top" secondItem="gyx-XR-Dge" secondAttribute="top" constant="178" id="Mim-We-Fbc"/>
-                            <constraint firstItem="etc-Jl-tp3" firstAttribute="leading" secondItem="gyx-XR-Dge" secondAttribute="leading" constant="67" id="RGg-fE-57c"/>
-                            <constraint firstItem="gyx-XR-Dge" firstAttribute="bottom" secondItem="etc-Jl-tp3" secondAttribute="bottom" constant="299" id="c8m-hL-PsO"/>
-                            <constraint firstItem="tsO-ZF-gcv" firstAttribute="leading" secondItem="gyx-XR-Dge" secondAttribute="leading" constant="137" id="eQR-tj-EsN"/>
-                            <constraint firstItem="etc-Jl-tp3" firstAttribute="top" secondItem="gyx-XR-Dge" secondAttribute="top" constant="108" id="sY3-Wq-ONF"/>
-                            <constraint firstItem="gyx-XR-Dge" firstAttribute="trailing" secondItem="etc-Jl-tp3" secondAttribute="trailing" constant="68" id="v8k-EG-DHh"/>
-                            <constraint firstItem="gyx-XR-Dge" firstAttribute="bottom" secondItem="tsO-ZF-gcv" secondAttribute="bottom" constant="369" id="zdq-uj-0FB"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="gyx-XR-Dge"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y1s-MN-bQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -107,38 +138,55 @@
         <scene sceneID="jS9-Ye-mQ3">
             <objects>
                 <viewController storyboardIdentifier="OnboardThree" id="XRd-bR-OI0" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Sz4-4A-54W">
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="Sz4-4A-54W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnboardBorder" translatesAutoresizingMaskIntoConstraints="NO" id="tXs-Nd-ehQ">
-                                <rect key="frame" x="67" y="172" width="240" height="196"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="skip button" translatesAutoresizingMaskIntoConstraints="NO" id="rsE-WY-vpC">
+                                <rect key="frame" x="282" y="30" width="67" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="After the event, review who you met and reach out to hang out again!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odc-Z7-c8X">
-                                <rect key="frame" x="55" y="406" width="264" height="78"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="onboaring 3 illustration" translatesAutoresizingMaskIntoConstraints="NO" id="WfK-Dd-UG8">
+                                <rect key="frame" x="94" y="120" width="187" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="Look back on who you talked to and share contact info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IeG-5h-Tz1">
+                                <rect key="frame" x="72" y="389" width="234" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D03-r8-7jq">
-                                <rect key="frame" x="136" y="558" width="102" height="30"/>
-                                <state key="normal" title="Get Started"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="AFTER THE EVENT" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPb-mY-DYh">
+                                <rect key="frame" x="87" y="355" width="203" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="3aU-qG-M7U">
+                                <rect key="frame" x="112" y="566" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="HmU-m8-66F">
+                                <rect key="frame" x="184" y="566" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="pagination filled" translatesAutoresizingMaskIntoConstraints="NO" id="N7O-t3-EMY">
+                                <rect key="frame" x="256" y="566" width="10" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D03-r8-7jq">
+                                <rect key="frame" x="112" y="487" width="154" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
+                                <state key="normal" title="GET STARTED"/>
                                 <connections>
                                     <segue destination="jLf-73-idB" kind="show" id="fhO-ZV-xl5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ISe-DG-mn8" firstAttribute="bottom" secondItem="D03-r8-7jq" secondAttribute="bottom" constant="79" id="AvP-sC-i2j"/>
-                            <constraint firstItem="ISe-DG-mn8" firstAttribute="bottom" secondItem="tXs-Nd-ehQ" secondAttribute="bottom" constant="299" id="BcW-QW-L1g"/>
-                            <constraint firstItem="tXs-Nd-ehQ" firstAttribute="leading" secondItem="ISe-DG-mn8" secondAttribute="leading" constant="67" id="CYo-Bj-G9h"/>
-                            <constraint firstItem="D03-r8-7jq" firstAttribute="leading" secondItem="ISe-DG-mn8" secondAttribute="leading" constant="136" id="X3h-DR-RaD"/>
-                            <constraint firstItem="ISe-DG-mn8" firstAttribute="trailing" secondItem="tXs-Nd-ehQ" secondAttribute="trailing" constant="68" id="ffs-fP-okQ"/>
-                            <constraint firstItem="tXs-Nd-ehQ" firstAttribute="top" secondItem="ISe-DG-mn8" secondAttribute="top" constant="108" id="hXk-UG-R3I"/>
-                            <constraint firstItem="ISe-DG-mn8" firstAttribute="trailing" secondItem="D03-r8-7jq" secondAttribute="trailing" constant="137" id="n9o-4r-6PC"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ISe-DG-mn8"/>
                     </view>
                     <navigationItem key="navigationItem" id="nCh-F8-NU4"/>
@@ -147,28 +195,13 @@
             </objects>
             <point key="canvasLocation" x="2298.4000000000001" y="897.30134932533736"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="jfd-s4-M6L">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wFl-m4-CsR" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0eK-TZ-bEH">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="XRd-bR-OI0" kind="relationship" relationship="rootViewController" id="ScT-YZ-bht"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HXh-5e-9AF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1359.2" y="897.30134932533736"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="OnboardBorder" width="228" height="228"/>
-        <image name="OnboardOneImage" width="94" height="81"/>
-        <image name="OnboardTwoImage" width="123" height="99"/>
+        <image name="onboaring 1 illustration" width="191" height="191"/>
+        <image name="onboaring 2 illustration" width="191" height="207"/>
+        <image name="onboaring 3 illustration" width="191" height="191"/>
+        <image name="pagination filled" width="12" height="12"/>
+        <image name="pagination no fill" width="12" height="12"/>
+        <image name="skip button" width="36" height="13"/>
     </resources>
 </document>

@@ -18,47 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfileCircle" translatesAutoresizingMaskIntoConstraints="NO" id="5M6-41-uWf">
-                                <rect key="frame" x="127" y="76" width="120" height="120"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ProfileCircle" translatesAutoresizingMaskIntoConstraints="NO" id="5M6-41-uWf">
+                                <rect key="frame" x="127" y="76" width="104" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Profile Pic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t86-u0-mxx">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Upload Profile Pic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t86-u0-mxx">
                                 <rect key="frame" x="119" y="204" width="136" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCw-KU-TyH">
-                                <rect key="frame" x="61" y="254" width="252" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tCw-KU-TyH">
+                                <rect key="frame" x="61" y="254" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZn-qX-5n2">
-                                <rect key="frame" x="61" y="309" width="252" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZn-qX-5n2">
+                                <rect key="frame" x="61" y="309" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-jW-pDQ">
-                                <rect key="frame" x="61" y="364" width="252" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-jW-pDQ">
+                                <rect key="frame" x="61" y="364" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sgO-vq-Dux">
-                                <rect key="frame" x="61" y="419" width="252" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sgO-vq-Dux">
+                                <rect key="frame" x="61" y="419" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Code (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hof-Rn-JY7">
-                                <rect key="frame" x="61" y="474" width="252" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Code (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hof-Rn-JY7">
+                                <rect key="frame" x="61" y="474" width="230" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqq-nz-DjL">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mqq-nz-DjL">
                                 <rect key="frame" x="154" y="574" width="55" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <segue destination="WUe-TL-O1k" kind="show" id="vJp-c6-eC1"/>
@@ -66,35 +74,6 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="mqq-nz-DjL" firstAttribute="top" secondItem="hof-Rn-JY7" secondAttribute="bottom" constant="70" id="1Ui-Dc-0kA"/>
-                            <constraint firstItem="hof-Rn-JY7" firstAttribute="top" secondItem="sgO-vq-Dux" secondAttribute="bottom" constant="25" id="3lY-U1-lRV"/>
-                            <constraint firstItem="t86-u0-mxx" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="119" id="5Ts-wd-XpY"/>
-                            <constraint firstItem="sgO-vq-Dux" firstAttribute="top" secondItem="iTH-jW-pDQ" secondAttribute="bottom" constant="25" id="5V5-Xw-vbu"/>
-                            <constraint firstItem="iTH-jW-pDQ" firstAttribute="top" secondItem="NZn-qX-5n2" secondAttribute="bottom" constant="25" id="7Qp-9i-05s"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="NZn-qX-5n2" secondAttribute="trailing" constant="62" id="A1w-s1-VTx"/>
-                            <constraint firstItem="5M6-41-uWf" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="127" id="BJP-p4-IrU"/>
-                            <constraint firstItem="sgO-vq-Dux" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="F5L-sN-KJa"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="tCw-KU-TyH" secondAttribute="trailing" constant="62" id="Q4S-g1-frl"/>
-                            <constraint firstItem="5M6-41-uWf" firstAttribute="top" secondItem="Ht3-Mg-zOv" secondAttribute="top" constant="56" id="Sey-do-re2"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="mqq-nz-DjL" secondAttribute="trailing" constant="166" id="Smv-Yj-epi"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="iTH-jW-pDQ" secondAttribute="trailing" constant="62" id="WaV-uy-tbn"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="sgO-vq-Dux" secondAttribute="trailing" constant="62" id="XKC-bK-Mxo"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="bottom" secondItem="t86-u0-mxx" secondAttribute="bottom" constant="442" id="dJA-Ht-icg"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="t86-u0-mxx" secondAttribute="trailing" constant="120" id="dTh-PF-M2w"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="hof-Rn-JY7" secondAttribute="trailing" constant="62" id="ee6-EU-bif"/>
-                            <constraint firstItem="NZn-qX-5n2" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="gmH-z0-t4G"/>
-                            <constraint firstItem="hof-Rn-JY7" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="gxi-If-irY"/>
-                            <constraint firstItem="NZn-qX-5n2" firstAttribute="top" secondItem="tCw-KU-TyH" secondAttribute="bottom" constant="25" id="iSR-rf-8ey"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="bottom" secondItem="5M6-41-uWf" secondAttribute="bottom" constant="471" id="jYk-qx-gKf"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="trailing" secondItem="5M6-41-uWf" secondAttribute="trailing" constant="128" id="qrw-CA-NsG"/>
-                            <constraint firstItem="iTH-jW-pDQ" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="rek-ql-ziy"/>
-                            <constraint firstItem="mqq-nz-DjL" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="154" id="rvg-Ke-JDD"/>
-                            <constraint firstItem="t86-u0-mxx" firstAttribute="top" secondItem="Ht3-Mg-zOv" secondAttribute="top" constant="184" id="rwH-gb-g7h"/>
-                            <constraint firstItem="tCw-KU-TyH" firstAttribute="top" secondItem="t86-u0-mxx" secondAttribute="bottom" constant="29" id="tga-67-bkw"/>
-                            <constraint firstItem="tCw-KU-TyH" firstAttribute="leading" secondItem="Ht3-Mg-zOv" secondAttribute="leading" constant="61" id="xEn-VP-L5T"/>
-                            <constraint firstItem="Ht3-Mg-zOv" firstAttribute="bottom" secondItem="mqq-nz-DjL" secondAttribute="bottom" constant="63" id="y5B-mq-3XT"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ht3-Mg-zOv"/>
                     </view>
                 </viewController>
