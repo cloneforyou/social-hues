@@ -25,6 +25,7 @@
 		B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14BC96620AA4CB800AC6524 /* LaunchScreen.storyboard */; };
 		B14BC97320AA4CB900AC6524 /* Social_HuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BC97220AA4CB900AC6524 /* Social_HuesTests.swift */; };
 		B193664720B0E9BD003B329E /* FONT in Resources */ = {isa = PBXBuildFile; fileRef = B193664620B0E9BB003B329E /* FONT */; };
+		B1AEDB6E20B2350A009FCF5B /* ExtraSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		B14BC97420AA4CB900AC6524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B193664620B0E9BB003B329E /* FONT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FONT; path = "../../../../../../Downloads/final assets/FONT"; sourceTree = "<group>"; };
 		B193664820B0EAA3003B329E /* FONT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FONT; path = "../../../../../Downloads/final assets/FONT"; sourceTree = "<group>"; };
+		B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExtraSettings.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				37D415A320AEB43F0027F357 /* Convo.storyboard */,
 				37D415A920AEB6510027F357 /* SignUp.storyboard */,
 				AA70E7F720AFA70900C36A88 /* Events.storyboard */,
+				B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B193664720B0E9BD003B329E /* FONT in Resources */,
+				B1AEDB6E20B2350A009FCF5B /* ExtraSettings.storyboard in Resources */,
 				B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */,
 				37D415A420AEB43F0027F357 /* Convo.storyboard in Resources */,
 				AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */,
