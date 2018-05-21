@@ -95,11 +95,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="contact card bg" translatesAutoresizingMaskIntoConstraints="NO" id="M2o-sn-BaZ">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="contact card bg" translatesAutoresizingMaskIntoConstraints="NO" id="M2o-sn-BaZ">
                                 <rect key="frame" x="16" y="232" width="343" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="contact card bg" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-Lf-kqa">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="contact card bg" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-Lf-kqa">
                                 <rect key="frame" x="16" y="324" width="343" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -117,11 +117,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="contact photo" translatesAutoresizingMaskIntoConstraints="NO" id="P9r-mK-dOx">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="contact photo" translatesAutoresizingMaskIntoConstraints="NO" id="P9r-mK-dOx">
                                 <rect key="frame" x="24" y="239" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="contact card bg" translatesAutoresizingMaskIntoConstraints="NO" id="FTq-g4-wNc">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="contact card bg" translatesAutoresizingMaskIntoConstraints="NO" id="FTq-g4-wNc">
                                 <rect key="frame" x="16" y="421" width="343" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -132,27 +132,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="contact photo" translatesAutoresizingMaskIntoConstraints="NO" id="0P1-5g-Mwz">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="contact photo" translatesAutoresizingMaskIntoConstraints="NO" id="0P1-5g-Mwz">
                                 <rect key="frame" x="24" y="428" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="contact photo" translatesAutoresizingMaskIntoConstraints="NO" id="dYs-Lg-lWe">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="contact photo" translatesAutoresizingMaskIntoConstraints="NO" id="dYs-Lg-lWe">
                                 <rect key="frame" x="24" y="331" width="62" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="phone connect button" translatesAutoresizingMaskIntoConstraints="NO" id="nCY-Hs-AGU">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="phone connect button" translatesAutoresizingMaskIntoConstraints="NO" id="nCY-Hs-AGU">
                                 <rect key="frame" x="146" y="338" width="43" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="email connect button" translatesAutoresizingMaskIntoConstraints="NO" id="NDz-yA-irV">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="email connect button" translatesAutoresizingMaskIntoConstraints="NO" id="NDz-yA-irV">
                                 <rect key="frame" x="200" y="338" width="43" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="github connect button" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-2z-SUF">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="github connect button" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-2z-SUF">
                                 <rect key="frame" x="251" y="338" width="43" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="delete contact button" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-I2-G3u">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="delete contact button" translatesAutoresizingMaskIntoConstraints="NO" id="2I4-I2-G3u">
                                 <rect key="frame" x="302" y="338" width="43" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
