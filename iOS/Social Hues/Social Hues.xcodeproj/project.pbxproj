@@ -19,6 +19,7 @@
 		37D415B820B2879D0027F357 /* EventCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B720B2879D0027F357 /* EventCardViewCell.swift */; };
 		37D415BA20B288D10027F357 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B920B288D10027F357 /* Event.swift */; };
 		37D415BC20B289810027F357 /* FakeEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BB20B289810027F357 /* FakeEventStore.swift */; };
+		37D415BE20B2A1340027F357 /* DetailsBeforeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BD20B2A1340027F357 /* DetailsBeforeControllerViewController.swift */; };
 		AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA70E7F720AFA70900C36A88 /* Events.storyboard */; };
 		AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */; };
 		AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */; };
@@ -29,7 +30,7 @@
 		B14BC97320AA4CB900AC6524 /* Social_HuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14BC97220AA4CB900AC6524 /* Social_HuesTests.swift */; };
 		B193664720B0E9BD003B329E /* FONT in Resources */ = {isa = PBXBuildFile; fileRef = B193664620B0E9BB003B329E /* FONT */; };
 		B1AEDB6E20B2350A009FCF5B /* ExtraSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */; };
-		B1AEDB7020B27D4D009FCF5B /* EventSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1AEDB6F20B27D4D009FCF5B /* EventSignUp.storyboard */; };
+		B1AEDB7020B27D4D009FCF5B /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1AEDB6F20B27D4D009FCF5B /* Details.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		37D415B720B2879D0027F357 /* EventCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardViewCell.swift; sourceTree = "<group>"; };
 		37D415B920B288D10027F357 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		37D415BB20B289810027F357 /* FakeEventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEventStore.swift; sourceTree = "<group>"; };
+		37D415BD20B2A1340027F357 /* DetailsBeforeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBeforeControllerViewController.swift; sourceTree = "<group>"; };
 		AA70E7F720AFA70900C36A88 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -70,7 +72,7 @@
 		B193664620B0E9BB003B329E /* FONT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FONT; path = "../../../../../../Downloads/final assets/FONT"; sourceTree = "<group>"; };
 		B193664820B0EAA3003B329E /* FONT */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FONT; path = "../../../../../Downloads/final assets/FONT"; sourceTree = "<group>"; };
 		B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ExtraSettings.storyboard; sourceTree = "<group>"; };
-		B1AEDB6F20B27D4D009FCF5B /* EventSignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventSignUp.storyboard; sourceTree = "<group>"; };
+		B1AEDB6F20B27D4D009FCF5B /* Details.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Details.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,7 @@
 				37D415A320AEB43F0027F357 /* Convo.storyboard */,
 				37D415A920AEB6510027F357 /* SignUp.storyboard */,
 				AA70E7F720AFA70900C36A88 /* Events.storyboard */,
-				B1AEDB6F20B27D4D009FCF5B /* EventSignUp.storyboard */,
+				B1AEDB6F20B27D4D009FCF5B /* Details.storyboard */,
 				B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */,
 			);
 			path = Storyboards;
@@ -141,6 +143,7 @@
 				AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */,
 				AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */,
 				37D415B520B151540027F357 /* EventsTableViewController.swift */,
+				37D415BD20B2A1340027F357 /* DetailsBeforeControllerViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,7 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B193664720B0E9BD003B329E /* FONT in Resources */,
-				B1AEDB7020B27D4D009FCF5B /* EventSignUp.storyboard in Resources */,
+				B1AEDB7020B27D4D009FCF5B /* Details.storyboard in Resources */,
 				B1AEDB6E20B2350A009FCF5B /* ExtraSettings.storyboard in Resources */,
 				B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */,
 				37D415A420AEB43F0027F357 /* Convo.storyboard in Resources */,
@@ -299,6 +302,7 @@
 			files = (
 				B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */,
 				37D415BC20B289810027F357 /* FakeEventStore.swift in Sources */,
+				37D415BE20B2A1340027F357 /* DetailsBeforeControllerViewController.swift in Sources */,
 				37D415B020B0C2D80027F357 /* AddEventView.swift in Sources */,
 				37D415B620B151550027F357 /* EventsTableViewController.swift in Sources */,
 				37D415B820B2879D0027F357 /* EventCardViewCell.swift in Sources */,

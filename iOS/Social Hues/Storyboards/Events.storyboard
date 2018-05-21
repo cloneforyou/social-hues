@@ -59,13 +59,24 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event card" translatesAutoresizingMaskIntoConstraints="NO" id="wvf-h9-AmP">
-                                            <rect key="frame" x="15.5" y="4.5" width="343" height="76"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JUNE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-WZ-dbM">
-                                            <rect key="frame" x="48" y="20" width="52" height="18"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A1f-g3-WRR">
+                                            <rect key="frame" x="16" y="4" width="343" height="76"/>
+                                            <state key="normal" image="event card"/>
+                                            <connections>
+                                                <action selector="eventCardPressed:" destination="jeQ-2a-9Td" eventType="touchUpInside" id="Cpi-Xh-VPe"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2:30PM @Ode 141" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVP-u2-1jv">
+                                            <rect key="frame" x="108" y="41" width="220" height="19"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
+                                            <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CSE 441 Showcase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKc-cC-Qtc">
+                                            <rect key="frame" x="108" y="20" width="220" height="22"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -76,26 +87,19 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CSE 441 Showcase" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKc-cC-Qtc">
-                                            <rect key="frame" x="108" y="20" width="220" height="22"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2:30PM @Ode 141" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVP-u2-1jv">
-                                            <rect key="frame" x="108" y="41" width="220" height="19"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="JUNE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gNZ-WZ-dbM">
+                                            <rect key="frame" x="48" y="20" width="52" height="18"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
-                                            <color key="textColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="wvf-h9-AmP" secondAttribute="trailing" constant="16.32" id="EMi-Gz-dBh"/>
-                                        <constraint firstItem="wvf-h9-AmP" firstAttribute="leading" secondItem="OD6-NA-6Gp" secondAttribute="leading" constant="15.68" id="QBB-CP-f8U"/>
-                                        <constraint firstAttribute="bottom" secondItem="wvf-h9-AmP" secondAttribute="bottom" constant="4.3099999999999996" id="f6o-Xl-gAc"/>
-                                        <constraint firstItem="wvf-h9-AmP" firstAttribute="top" secondItem="OD6-NA-6Gp" secondAttribute="top" constant="4.6900000000000004" id="pMc-hc-jGj"/>
+                                        <constraint firstAttribute="trailing" secondItem="A1f-g3-WRR" secondAttribute="trailing" constant="16" id="1Ve-ZK-N2z"/>
+                                        <constraint firstItem="A1f-g3-WRR" firstAttribute="leading" secondItem="OD6-NA-6Gp" secondAttribute="leading" constant="16" id="MIW-2L-tsJ"/>
+                                        <constraint firstItem="A1f-g3-WRR" firstAttribute="top" secondItem="OD6-NA-6Gp" secondAttribute="top" constant="4" id="ROZ-Wy-jmS"/>
+                                        <constraint firstAttribute="bottom" secondItem="A1f-g3-WRR" secondAttribute="bottom" constant="5" id="uku-w6-25H"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -177,13 +181,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ga1-Wh-ofD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1599.2" y="-228.93553223388307"/>
-        </scene>
-        <!--Storyboard Reference-->
-        <scene sceneID="udF-TE-pQv">
-            <objects>
-                <viewControllerPlaceholder id="vM3-8Q-Yf9" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6JE-k8-VwA" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
         </scene>
     </scenes>
     <resources>

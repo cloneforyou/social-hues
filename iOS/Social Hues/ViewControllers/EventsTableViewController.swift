@@ -8,8 +8,10 @@
 
 import UIKit
 
-protocol EventsTableViewControllerDelegate {
+protocol EventsTableViewControllerDelegate: class {
     func addEvent(code: String)
+    func eventCardWasPressed()
+    func detailsWasDismissed()
 }
 
 class EventsTableViewController : UITableViewController {
@@ -32,12 +34,11 @@ extension EventsTableViewController {
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
-        let casted = cell as! EventCardViewCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventCardViewCell
+        cell.delegate = self
         let store = FakeEventStore()
-        casted.populateVals(store.getEvent(code: events[indexPath.row]))
-        return casted
+        cell.populateVals(store.getEvent(code: events[indexPath.row]))
+        return cell
     }
 }
 
@@ -47,5 +48,16 @@ extension EventsTableViewController : EventsTableViewControllerDelegate {
         self.tableView.beginUpdates()
         self.tableView.insertRows(at: [IndexPath(row: events.count - 1, section: 0)], with: UITableViewRowAnimation.top)
         self.tableView.endUpdates()
+    }
+    
+    func eventCardWasPressed() {
+        let details = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsBefore")
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+        self.navigationController?.pushViewController(details, animated: true)
+    }
+    
+    func detailsWasDismissed() {
+        
     }
 }
