@@ -18,6 +18,15 @@ class DetailsBeforeControllerViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = false
         delegate?.detailsWasDismissed()
     }
+    
+    
+    @IBAction func startButtonPressed(_ sender: UIButton) {
+        guard let convo = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateInitialViewController() else {
+            return
+        }
+        self.present(convo, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

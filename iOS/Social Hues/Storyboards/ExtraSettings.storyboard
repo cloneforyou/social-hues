@@ -55,7 +55,7 @@
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="back button black" translatesAutoresizingMaskIntoConstraints="NO" id="vEi-WQ-KaO">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="back button black" translatesAutoresizingMaskIntoConstraints="NO" id="vEi-WQ-KaO">
                                 <rect key="frame" x="30" y="31" width="16" height="25"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -67,7 +67,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="XVg-Fp-HkK">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="XVg-Fp-HkK">
                                 <rect key="frame" x="334" y="111" width="8" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -95,19 +95,19 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="sJ6-tL-pBM">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="sJ6-tL-pBM">
                                 <rect key="frame" x="334" y="144" width="8" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="VRd-nQ-clu">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="VRd-nQ-clu">
                                 <rect key="frame" x="334" y="177" width="8" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="Guq-uJ-trX">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="Guq-uJ-trX">
                                 <rect key="frame" x="334" y="213" width="8" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="settings category divider" translatesAutoresizingMaskIntoConstraints="NO" id="A3c-dG-yd8">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="settings category divider" translatesAutoresizingMaskIntoConstraints="NO" id="A3c-dG-yd8">
                                 <rect key="frame" x="28" y="249" width="319" height="3"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -119,11 +119,11 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-ZL-d3B">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="settings field more button" translatesAutoresizingMaskIntoConstraints="NO" id="Ym3-ZL-d3B">
                                 <rect key="frame" x="334" y="300" width="8" height="13"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="switch off" translatesAutoresizingMaskIntoConstraints="NO" id="i02-1q-RY1">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="switch off" translatesAutoresizingMaskIntoConstraints="NO" id="i02-1q-RY1">
                                 <rect key="frame" x="308" y="322" width="40" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -144,6 +144,7 @@
             </objects>
             <point key="canvasLocation" x="-591.20000000000005" y="634.632683658171"/>
         </scene>
+<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="lVe-q9-uwl">
             <objects>
@@ -193,6 +194,11 @@
         <image name="cancel button" width="53" height="10"/>
         <image name="profile pic" width="106" height="106"/>
         <image name="save button" width="32" height="10"/>
+=======
+    </scenes>
+    <resources>
+        <image name="back button black" width="11" height="18"/>
+>>>>>>> 9f04d3dfaeb1e47ae5b5b0d37ebf0ecbc3d3beb8
         <image name="settings category divider" width="319" height="1"/>
         <image name="settings field more button" width="8" height="13"/>
         <image name="switch off" width="40" height="23"/>

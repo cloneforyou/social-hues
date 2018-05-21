@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		37D4159B20ACFDA70027F357 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D4159A20ACFDA70027F357 /* Onboarding.storyboard */; };
 		37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */; };
-		37D415A420AEB43F0027F357 /* Convo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415A320AEB43F0027F357 /* Convo.storyboard */; };
+		37D415A420AEB43F0027F357 /* ConvoOnboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415A320AEB43F0027F357 /* ConvoOnboard.storyboard */; };
 		37D415A620AEB55A0027F357 /* ConvoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415A520AEB55A0027F357 /* ConvoPageViewController.swift */; };
 		37D415AA20AEB6510027F357 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415A920AEB6510027F357 /* SignUp.storyboard */; };
 		37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415AB20AEB66F0027F357 /* SignUpViewController.swift */; };
@@ -20,6 +20,8 @@
 		37D415BA20B288D10027F357 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B920B288D10027F357 /* Event.swift */; };
 		37D415BC20B289810027F357 /* FakeEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BB20B289810027F357 /* FakeEventStore.swift */; };
 		37D415BE20B2A1340027F357 /* DetailsBeforeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BD20B2A1340027F357 /* DetailsBeforeControllerViewController.swift */; };
+		37D415C020B371360027F357 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BF20B371360027F357 /* PromptViewController.swift */; };
+		37D415C220B3714B0027F357 /* Prompt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415C120B3714B0027F357 /* Prompt.storyboard */; };
 		AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA70E7F720AFA70900C36A88 /* Events.storyboard */; };
 		AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */; };
 		AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */; };
@@ -46,7 +48,7 @@
 /* Begin PBXFileReference section */
 		37D4159A20ACFDA70027F357 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPageViewController.swift; sourceTree = "<group>"; };
-		37D415A320AEB43F0027F357 /* Convo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Convo.storyboard; sourceTree = "<group>"; };
+		37D415A320AEB43F0027F357 /* ConvoOnboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConvoOnboard.storyboard; sourceTree = "<group>"; };
 		37D415A520AEB55A0027F357 /* ConvoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvoPageViewController.swift; sourceTree = "<group>"; };
 		37D415A920AEB6510027F357 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
 		37D415AB20AEB66F0027F357 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,8 @@
 		37D415B920B288D10027F357 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		37D415BB20B289810027F357 /* FakeEventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEventStore.swift; sourceTree = "<group>"; };
 		37D415BD20B2A1340027F357 /* DetailsBeforeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBeforeControllerViewController.swift; sourceTree = "<group>"; };
+		37D415BF20B371360027F357 /* PromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromptViewController.swift; path = ViewControllers/PromptViewController.swift; sourceTree = SOURCE_ROOT; };
+		37D415C120B3714B0027F357 /* Prompt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prompt.storyboard; sourceTree = "<group>"; };
 		AA70E7F720AFA70900C36A88 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -99,11 +103,12 @@
 				B14BC96120AA4CB300AC6524 /* Main.storyboard */,
 				B14BC96620AA4CB800AC6524 /* LaunchScreen.storyboard */,
 				37D4159A20ACFDA70027F357 /* Onboarding.storyboard */,
-				37D415A320AEB43F0027F357 /* Convo.storyboard */,
+				37D415A320AEB43F0027F357 /* ConvoOnboard.storyboard */,
 				37D415A920AEB6510027F357 /* SignUp.storyboard */,
 				AA70E7F720AFA70900C36A88 /* Events.storyboard */,
 				B1AEDB6F20B27D4D009FCF5B /* Details.storyboard */,
 				B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */,
+				37D415C120B3714B0027F357 /* Prompt.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 		37D415B420B0EBA10027F357 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				37D415BF20B371360027F357 /* PromptViewController.swift */,
 				37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */,
 				37D415A520AEB55A0027F357 /* ConvoPageViewController.swift */,
 				37D415AB20AEB66F0027F357 /* SignUpViewController.swift */,
@@ -274,10 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B193664720B0E9BD003B329E /* FONT in Resources */,
+				37D415C220B3714B0027F357 /* Prompt.storyboard in Resources */,
 				B1AEDB7020B27D4D009FCF5B /* Details.storyboard in Resources */,
 				B1AEDB6E20B2350A009FCF5B /* ExtraSettings.storyboard in Resources */,
 				B14BC96820AA4CB800AC6524 /* LaunchScreen.storyboard in Resources */,
-				37D415A420AEB43F0027F357 /* Convo.storyboard in Resources */,
+				37D415A420AEB43F0027F357 /* ConvoOnboard.storyboard in Resources */,
 				AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */,
 				37D415AA20AEB6510027F357 /* SignUp.storyboard in Resources */,
 				B14BC96520AA4CB800AC6524 /* Assets.xcassets in Resources */,
@@ -312,6 +319,7 @@
 				37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */,
 				37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */,
 				37D415BA20B288D10027F357 /* Event.swift in Sources */,
+				37D415C020B371360027F357 /* PromptViewController.swift in Sources */,
 				AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
