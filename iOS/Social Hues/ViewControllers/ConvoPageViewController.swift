@@ -39,7 +39,7 @@ class ConvoPageViewController : UIPageViewController {
     }()
     
     private func newColoredViewController(order: String) -> UIViewController {
-        return UIStoryboard(name: "Convo", bundle: nil).instantiateViewController(withIdentifier:"Convo\(order)")
+        return UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateViewController(withIdentifier:"Convo\(order)")
     }
 }
 
