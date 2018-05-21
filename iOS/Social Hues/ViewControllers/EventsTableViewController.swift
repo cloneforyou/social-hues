@@ -33,9 +33,11 @@ extension EventsTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
+        let casted = cell as! EventCardViewCell
         
-        cell.textLabel!.text = events[indexPath.row]
-        return cell
+        let store = FakeEventStore()
+        casted.populateVals(store.getEvent(code: events[indexPath.row]))
+        return casted
     }
 }
 
