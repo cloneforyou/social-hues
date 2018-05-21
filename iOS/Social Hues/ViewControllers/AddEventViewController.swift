@@ -28,16 +28,18 @@ class AddEventViewController : UIViewController {
     
     open override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(rgb: 0x0A1C3F)
+        self.view.backgroundColor = UIColor(red: 0.423529, green: 0.454902, blue: 0.517647, alpha: 1)
+        
         
         // add event modal
         let newPopup = AddEventView(frame: CGRect(x: 0, y: 0, width: 317, height: 241), addEventDelegate:self)
         newPopup.translatesAutoresizingMaskIntoConstraints = true
-        newPopup.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY)
+        newPopup.center = CGPoint(x: self.view.bounds.midX, y: self.view.bounds.midY - 40)
         newPopup.autoresizingMask = [UIViewAutoresizing.flexibleLeftMargin, UIViewAutoresizing.flexibleRightMargin, UIViewAutoresizing.flexibleTopMargin, UIViewAutoresizing.flexibleBottomMargin]
         self.popup = newPopup
         self.view.addSubview(popup!)
         
+        // add keyboard view
         
     }
     
