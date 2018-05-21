@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol DetailsBeforeDelegate: class {
+    func startPrompts()
+}
+
 class DetailsBeforeControllerViewController: UIViewController {
     weak var delegate: EventsTableViewControllerDelegate?
 
@@ -21,9 +25,8 @@ class DetailsBeforeControllerViewController: UIViewController {
     
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
-        guard let convo = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateInitialViewController() else {
-            return
-        }
+        let convo = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateInitialViewController() as! ConvoPageViewController
+        convo.detailsDelegate = self
         self.present(convo, animated: true, completion: nil)
     }
     
@@ -38,6 +41,7 @@ class DetailsBeforeControllerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
 
     /*
     // MARK: - Navigation
@@ -49,4 +53,11 @@ class DetailsBeforeControllerViewController: UIViewController {
     }
     */
 
+}
+
+extension DetailsBeforeControllerViewController: DetailsBeforeDelegate {
+    func startPrompts() {
+        let prompts = UIStoryboard(name: "Prompt", bundle: nil).instantiateInitialViewController()
+        self.navigationController?.pushViewController(prompts!, animated: true)
+    }
 }

@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-1335" y="1211"/>
         </scene>
-        <!--View Controller-->
+        <!--Convo Screen View Controller-->
         <scene sceneID="gbz-9b-tFT">
             <objects>
-                <viewController storyboardIdentifier="ConvoOne" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zqU-mj-yEq" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConvoOne" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zqU-mj-yEq" customClass="ConvoScreenViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lv7-cT-wR3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -53,18 +53,21 @@
                                 <state key="normal" title="SKIP">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipOnePressed:" destination="zqU-mj-yEq" eventType="touchUpInside" id="9ye-0z-YaY"/>
+                                </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="start event onboarding illustration 1" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-SY-THZ">
+                                <rect key="frame" x="73" y="156" width="228" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert your phone face out into the pouch provided" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvg-Sk-1qh">
-                                <rect key="frame" x="70" y="429" width="238" height="75"/>
+                                <rect key="frame" x="68" y="397" width="238" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="start event onboarding illustration 1" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-SY-THZ">
-                                <rect key="frame" x="70" y="181" width="228" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="lea-dz-lni"/>
@@ -74,10 +77,10 @@
             </objects>
             <point key="canvasLocation" x="-588" y="1212"/>
         </scene>
-        <!--View Controller-->
+        <!--Convo Screen View Controller-->
         <scene sceneID="Gpf-M9-Cea">
             <objects>
-                <viewController storyboardIdentifier="ConvoTwo" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MYH-Od-1cV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConvoTwo" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MYH-Od-1cV" customClass="ConvoScreenViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="m3o-y1-lDh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -101,18 +104,21 @@
                                 <state key="normal" title="SKIP">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="skipTwoPressed:" destination="MYH-Od-1cV" eventType="touchUpInside" id="ZgF-YI-mvt"/>
+                                </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="start event onboarding illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="zTN-kv-X9O">
+                                <rect key="frame" x="85" y="153" width="205" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find someone with the same color as you to start a conversation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qv-Mm-eRr">
-                                <rect key="frame" x="70" y="435" width="238" height="75"/>
+                                <rect key="frame" x="68" y="413" width="238" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="start event onboarding illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="zTN-kv-X9O">
-                                <rect key="frame" x="85" y="178" width="205" height="222"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="yRd-0u-fXs"/>
@@ -122,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="41" y="1210"/>
         </scene>
-        <!--View Controller-->
+        <!--Convo Screen View Controller-->
         <scene sceneID="9t1-Rq-3mI">
             <objects>
-                <viewController storyboardIdentifier="ConvoThree" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z7C-lH-Bpu" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConvoThree" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z7C-lH-Bpu" customClass="ConvoScreenViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="AGs-y8-4V7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
@@ -143,22 +149,25 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x6r-c1-tsQ">
-                                <rect key="frame" x="112" y="512" width="154" height="30"/>
+                                <rect key="frame" x="110" y="610" width="154" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
                                 <state key="normal" title="GET STARTED"/>
+                                <connections>
+                                    <action selector="getStartedPressed:" destination="Z7C-lH-Bpu" eventType="touchUpInside" id="4Dv-aV-fRq"/>
+                                </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="start event onboarding illustration 3" translatesAutoresizingMaskIntoConstraints="NO" id="ess-3Y-iEI">
+                                <rect key="frame" x="73" y="160" width="228" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follow the prompts shown on the other person's phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-A2-HH0">
-                                <rect key="frame" x="82" y="424" width="210" height="75"/>
+                                <rect key="frame" x="82" y="417" width="210" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="start event onboarding illustration 3" translatesAutoresizingMaskIntoConstraints="NO" id="ess-3Y-iEI">
-                                <rect key="frame" x="73" y="183" width="228" height="233"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="oon-Jc-diM"/>

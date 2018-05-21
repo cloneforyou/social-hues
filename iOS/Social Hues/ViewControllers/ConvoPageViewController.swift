@@ -8,7 +8,12 @@
 
 import UIKit
 
+protocol ConvoPageViewControllerDelegate: class {
+    func userDidFinishOnBoard()
+}
+
 class ConvoPageViewController : UIPageViewController {
+    weak var detailsDelegate: DetailsBeforeDelegate?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +27,8 @@ class ConvoPageViewController : UIPageViewController {
         }
         self.view.backgroundColor = .gray
     }
+    
+    
     
     init() {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -39,44 +46,53 @@ class ConvoPageViewController : UIPageViewController {
     }()
     
     private func newColoredViewController(order: String) -> UIViewController {
-        return UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateViewController(withIdentifier:"Convo\(order)")
+        let newVC = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateViewController(withIdentifier:"Convo\(order)") as! ConvoScreenViewController
+        newVC.delegate = self
+        return newVC
     }
 }
 
-    extension ConvoPageViewController: UIPageViewControllerDataSource {
-        func pageViewController(_ pageViewController: UIPageViewController,
-                                viewControllerBefore viewController: UIViewController) -> UIViewController? {
-            guard let vcIndex = controllers.index(of:viewController) else {
-                return nil
-            }
-            let prevIndex = vcIndex - 1
-            
-            guard prevIndex >= 0 else {
-                return nil
-            }
-            
-            guard controllers.count > prevIndex else {
-                return nil
-            }
-            
-            return controllers[prevIndex]
+extension ConvoPageViewController: ConvoPageViewControllerDelegate {
+    func userDidFinishOnBoard() {
+        self.dismiss(animated: false, completion: nil)
+        self.detailsDelegate?.startPrompts()
+    }
+}
+
+extension ConvoPageViewController: UIPageViewControllerDataSource {
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            viewControllerBefore viewController: UIViewController) -> UIViewController? {
+        guard let vcIndex = controllers.index(of:viewController) else {
+            return nil
+        }
+        let prevIndex = vcIndex - 1
+        
+        guard prevIndex >= 0 else {
+            return nil
         }
         
-        func pageViewController(_ pageViewController: UIPageViewController,
-                                viewControllerAfter viewController: UIViewController) -> UIViewController? {
-            guard let vcIndex = controllers.index(of:viewController) else {
-                return nil
-            }
-            let nextIndex = vcIndex + 1
-            
-            guard nextIndex != controllers.count else {
-                return nil
-            }
-            
-            guard controllers.count > nextIndex else {
-                return nil
-            }
-            
-            return controllers[nextIndex]
+        guard controllers.count > prevIndex else {
+            return nil
         }
+        
+        return controllers[prevIndex]
     }
+    
+    func pageViewController(_ pageViewController: UIPageViewController,
+                            viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        guard let vcIndex = controllers.index(of:viewController) else {
+            return nil
+        }
+        let nextIndex = vcIndex + 1
+        
+        guard nextIndex != controllers.count else {
+            return nil
+        }
+        
+        guard controllers.count > nextIndex else {
+            return nil
+        }
+        
+        return controllers[nextIndex]
+    }
+}
