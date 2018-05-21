@@ -102,7 +102,7 @@ class AddEventView: UIView {
     }
     
     @objc fileprivate func addPressed(sender: UIButton) {
-        // delegate?.addEventPressed()
+        delegate?.addEventButtonPressed(code: (self.eventCodeField?.text)!)
     }
     
     @objc func keyboardWillShow(notification: NSNotification) {
