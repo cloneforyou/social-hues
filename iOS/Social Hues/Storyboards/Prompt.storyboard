@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CircularStd-Medium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Prompt View Controller-->
+        <scene sceneID="U2g-ln-gYy">
+            <objects>
+                <viewController id="hVS-Cx-1sM" customClass="PromptViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1OV-bb-PXB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-hz-vD5">
+                                <rect key="frame" x="54" y="212" width="278" height="307"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="307" id="zir-Xs-v1p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="55"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0fJ-hz-vD5" firstAttribute="leading" secondItem="e92-Cy-6cm" secondAttribute="leading" constant="54" id="BF3-9h-tM7"/>
+                            <constraint firstItem="e92-Cy-6cm" firstAttribute="trailing" secondItem="0fJ-hz-vD5" secondAttribute="trailing" constant="43" id="CFj-MG-l36"/>
+                            <constraint firstItem="e92-Cy-6cm" firstAttribute="bottom" secondItem="0fJ-hz-vD5" secondAttribute="bottom" constant="148" id="Q0C-Hw-zG4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e92-Cy-6cm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mnn-zE-acw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-71.200000000000003" y="166.8665667166417"/>
+        </scene>
+    </scenes>
+</document>

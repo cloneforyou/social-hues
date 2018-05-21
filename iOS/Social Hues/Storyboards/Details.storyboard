@@ -80,6 +80,9 @@
                                     <constraint firstAttribute="height" constant="45" id="qR3-jP-ev3"/>
                                 </constraints>
                                 <state key="normal" image="start event button"/>
+                                <connections>
+                                    <action selector="startButtonPressed:" destination="0Cx-NW-7gm" eventType="touchUpInside" id="Ucs-MP-rkb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93869413860103623" green="0.93869413860103623" blue="0.93869413860103623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

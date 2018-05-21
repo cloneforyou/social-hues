@@ -20,6 +20,7 @@ class ConvoPageViewController : UIPageViewController {
                                animated: true,
                                completion: nil)
         }
+        self.view.backgroundColor = .gray
     }
     
     init() {
@@ -34,9 +35,7 @@ class ConvoPageViewController : UIPageViewController {
     private(set) lazy var controllers: [UIViewController] = {
         return [self.newColoredViewController(order: "One"),
                 self.newColoredViewController(order: "Two"),
-                self.newColoredViewController(order: "Three"),
-                self.newColoredViewController(order: "Four"),
-                self.newColoredViewController(order: "Five")]
+                self.newColoredViewController(order: "Three")]
     }()
     
     private func newColoredViewController(order: String) -> UIViewController {
