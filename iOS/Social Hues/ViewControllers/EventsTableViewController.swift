@@ -31,10 +31,10 @@ extension EventsTableViewController {
     }
     
     
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        let cell = tableView.dequeueReusableCellWithIdentifier("carCell", forRow: indexPath) as! UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath)
         
-        cell.textLabel!.text = cars[indexPath.row]
+        cell.textLabel!.text = events[indexPath.row]
         return cell
     }
 }
@@ -43,7 +43,7 @@ extension EventsTableViewController : EventsTableViewControllerDelegate {
     func addEvent(code: String) {
         events.append(code)
         self.tableView.beginUpdates()
-        self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: UITableViewRowAnimation.top)
+        self.tableView.insertRows(at: [IndexPath(row: events.count - 1, section: 0)], with: UITableViewRowAnimation.top)
         self.tableView.endUpdates()
     }
 }
