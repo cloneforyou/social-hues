@@ -9,6 +9,7 @@
 import UIKit
 
 class PromptViewController: UIViewController {
+    weak var delegate: ConvoPageViewController?
     @IBOutlet weak var scannedLabel: UILabel!
     @IBOutlet weak var qrBoundary: UIImageView!
     @IBOutlet weak var prompt: UILabel!

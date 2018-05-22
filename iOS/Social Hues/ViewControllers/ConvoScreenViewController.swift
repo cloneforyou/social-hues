@@ -14,11 +14,12 @@ class ConvoScreenViewController: UIViewController {
     @IBAction func getStartedPressed(_ sender: UIButton) {
         moveOnToPrompt()
     }
-    @IBAction func skipTwoPressed(_ sender: UIButton) {
+    
+    @IBAction func skipPressed(_ sender: UIButton) {
         moveOnToPrompt()
     }
-    @IBAction func skipOnePressed(_ sender: UIButton) {
-        moveOnToPrompt()
+    @IBAction func backPressed(_ sender: UIButton) {
+        delegate?.returnToDetails()
     }
     
     func moveOnToPrompt() {

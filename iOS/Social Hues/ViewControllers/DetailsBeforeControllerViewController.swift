@@ -14,6 +14,7 @@ protocol DetailsBeforeDelegate: class {
 
 class DetailsBeforeControllerViewController: UIViewController {
     weak var delegate: EventsTableViewControllerDelegate?
+    var onboardComplete = false
 
     @IBAction func backButtonPressed(_ sender: UIButton) {
         
@@ -26,10 +27,15 @@ class DetailsBeforeControllerViewController: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         print("start button called")
-        let convo = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateInitialViewController() as! ConvoPageViewController
-        convo.detailsDelegate = self
-        self.present(convo, animated: true, completion: nil)
-        print("presented")
+        if onboardComplete {
+            startPrompts()
+        } else {
+            let convo = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateInitialViewController() as! ConvoPageViewController
+            convo.detailsDelegate = self
+            self.present(convo, animated: true, completion: nil)
+            print("presented")
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -59,7 +65,9 @@ class DetailsBeforeControllerViewController: UIViewController {
 
 extension DetailsBeforeControllerViewController: DetailsBeforeDelegate {
     func startPrompts() {
+        onboardComplete = true
         let prompts = UIStoryboard(name: "Prompt", bundle: nil).instantiateInitialViewController()
-        self.navigationController?.pushViewController(prompts!, animated: true)
+        self.present(prompts!, animated: true, completion: nil)
+        //self.navigationController?.pushViewController(prompts!, animated: true)
     }
 }

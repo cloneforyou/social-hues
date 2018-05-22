@@ -10,6 +10,7 @@ import UIKit
 
 protocol ConvoPageViewControllerDelegate: class {
     func userDidFinishOnBoard()
+    func returnToDetails()
 }
 
 class ConvoPageViewController : UIPageViewController {
@@ -44,7 +45,13 @@ class ConvoPageViewController : UIPageViewController {
                 self.newColoredViewController(order: "Two"),
                 self.newColoredViewController(order: "Three"),
                 self.newColoredViewController(order: "Four")]
+                //self.getPromptVC()]
     }()
+    private func getPromptVC() -> UIViewController {
+        let newVC = UIStoryboard(name: "Prompt", bundle: nil).instantiateInitialViewController() as! PromptViewController
+        newVC.delegate = self
+        return newVC
+    }
     
     private func newColoredViewController(order: String) -> UIViewController {
         let newVC = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateViewController(withIdentifier:"Convo\(order)") as! ConvoScreenViewController
@@ -55,8 +62,11 @@ class ConvoPageViewController : UIPageViewController {
 
 extension ConvoPageViewController: ConvoPageViewControllerDelegate {
     func userDidFinishOnBoard() {
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
         self.detailsDelegate?.startPrompts()
+    }
+    func returnToDetails() {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
