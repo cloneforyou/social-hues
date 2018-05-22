@@ -42,7 +42,8 @@ class ConvoPageViewController : UIPageViewController {
     private(set) lazy var controllers: [UIViewController] = {
         return [self.newColoredViewController(order: "One"),
                 self.newColoredViewController(order: "Two"),
-                self.newColoredViewController(order: "Three")]
+                self.newColoredViewController(order: "Three"),
+                self.newColoredViewController(order: "Four")]
     }()
     
     private func newColoredViewController(order: String) -> UIViewController {
