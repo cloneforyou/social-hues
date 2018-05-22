@@ -40,12 +40,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESS &amp; HOLD TO SCAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-hz-vD5">
-                                <rect key="frame" x="108" y="537" width="159" height="130"/>
+                                <rect key="frame" x="108" y="577" width="159" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="130" id="Dx6-21-SeL"/>
+                                    <constraint firstAttribute="height" constant="70" id="sO7-Va-pHY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="17"/>
                                 <color key="textColor" red="0.96353933828637328" green="1" blue="0.95080288421749592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLIDE UP TO SHOW CODE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0l3-8e-jj9">
+                                <rect key="frame" x="108" y="497" width="159" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="HQl-he-Ia3"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="Twt-z0-6ZA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="17"/>
+                                <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your favorite part about this class?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFg-1h-CWU">
@@ -68,21 +80,38 @@
                                     <action selector="backButtonPressed:" destination="UOx-gy-EE3" eventType="touchUpInside" id="nm1-5P-B7u"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SLIDE BACK DOWN TO SCAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTI-9l-uw1">
+                                <rect key="frame" x="108" y="577" width="159" height="70"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="4qE-vR-49d"/>
+                                    <constraint firstAttribute="height" constant="70" id="yDl-a5-8xE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="17"/>
+                                <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="0l3-8e-jj9" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="2W7-3A-NLp"/>
                             <constraint firstItem="r5h-25-90c" firstAttribute="top" secondItem="VGV-Dw-BzC" secondAttribute="bottom" constant="8" id="3ip-SS-R5l"/>
                             <constraint firstItem="0fJ-hz-vD5" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="5MJ-4v-0iu"/>
+                            <constraint firstItem="mTI-9l-uw1" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="8Uz-cM-53N"/>
+                            <constraint firstAttribute="bottom" secondItem="0fJ-hz-vD5" secondAttribute="bottom" constant="20" id="9iM-Yp-4YE"/>
                             <constraint firstAttribute="bottom" secondItem="EFg-1h-CWU" secondAttribute="bottom" constant="92" id="Awv-wK-Eou"/>
                             <constraint firstItem="EFg-1h-CWU" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="34" id="HaQ-tr-aCF"/>
+                            <constraint firstAttribute="bottom" secondItem="0l3-8e-jj9" secondAttribute="bottom" constant="100" id="Ic5-I5-Qe2"/>
+                            <constraint firstAttribute="trailing" secondItem="0l3-8e-jj9" secondAttribute="trailing" constant="108" id="K6z-ZN-NDm"/>
                             <constraint firstItem="3QQ-Jn-GQx" firstAttribute="top" secondItem="DWm-YU-aAR" secondAttribute="top" constant="20" id="LgI-xc-6cu"/>
                             <constraint firstAttribute="bottom" secondItem="r5h-25-90c" secondAttribute="bottom" constant="233" id="M9c-Oa-UbS"/>
                             <constraint firstAttribute="trailing" secondItem="0fJ-hz-vD5" secondAttribute="trailing" constant="108" id="TGs-Js-Toa"/>
                             <constraint firstAttribute="trailing" secondItem="EFg-1h-CWU" secondAttribute="trailing" constant="35" id="Toc-Uk-37H"/>
                             <constraint firstAttribute="trailing" secondItem="VGV-Dw-BzC" secondAttribute="trailing" constant="108" id="Zb1-GY-4uc"/>
                             <constraint firstAttribute="trailing" secondItem="r5h-25-90c" secondAttribute="trailing" constant="87" id="Zkw-iD-c4J"/>
-                            <constraint firstAttribute="bottom" secondItem="0fJ-hz-vD5" secondAttribute="bottom" id="gOw-z1-1nf"/>
+                            <constraint firstAttribute="bottom" secondItem="mTI-9l-uw1" secondAttribute="bottom" constant="20" id="hSB-e3-uh5"/>
+                            <constraint firstAttribute="trailing" secondItem="mTI-9l-uw1" secondAttribute="trailing" constant="108" id="hek-hI-LSP"/>
                             <constraint firstItem="3QQ-Jn-GQx" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="16" id="u6v-0q-7Eq"/>
                             <constraint firstItem="VGV-Dw-BzC" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="whJ-6z-dKd"/>
                             <constraint firstItem="r5h-25-90c" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="87" id="xbU-WI-AHQ"/>
@@ -97,6 +126,8 @@
                         <outlet property="prompt" destination="EFg-1h-CWU" id="DAS-FJ-uS7"/>
                         <outlet property="qrBoundary" destination="r5h-25-90c" id="Jhy-Lh-YPy"/>
                         <outlet property="scannedLabel" destination="VGV-Dw-BzC" id="IfZ-Uo-K0r"/>
+                        <outlet property="slideDown" destination="mTI-9l-uw1" id="VyV-VJ-V2D"/>
+                        <outlet property="slideUp" destination="0l3-8e-jj9" id="JVO-dJ-44M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJn-AP-gJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
