@@ -144,7 +144,6 @@
             </objects>
             <point key="canvasLocation" x="-591.20000000000005" y="634.632683658171"/>
         </scene>
-<<<<<<< HEAD
         <!--View Controller-->
         <scene sceneID="lVe-q9-uwl">
             <objects>
@@ -194,11 +193,6 @@
         <image name="cancel button" width="53" height="10"/>
         <image name="profile pic" width="106" height="106"/>
         <image name="save button" width="32" height="10"/>
-=======
-    </scenes>
-    <resources>
-        <image name="back button black" width="11" height="18"/>
->>>>>>> 9f04d3dfaeb1e47ae5b5b0d37ebf0ecbc3d3beb8
         <image name="settings category divider" width="319" height="1"/>
         <image name="settings field more button" width="8" height="13"/>
         <image name="switch off" width="40" height="23"/>

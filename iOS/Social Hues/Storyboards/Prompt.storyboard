@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hVS-Cx-1sM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UOx-gy-EE3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,133 +17,83 @@
     </customFonts>
     <scenes>
         <!--Prompt View Controller-->
-        <scene sceneID="U2g-ln-gYy">
-            <objects>
-                <viewController id="hVS-Cx-1sM" customClass="PromptViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1OV-bb-PXB">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRESS &amp; HOLD TO SCAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-hz-vD5">
-                                <rect key="frame" x="108" y="448" width="158" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="17"/>
-                                <color key="textColor" red="0.96353933828637328" green="1" blue="0.95080288421749592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.39550548791885376" green="0.82813894748687744" blue="0.38115891814231873" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="e92-Cy-6cm"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mnn-zE-acw" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-71.200000000000003" y="166.8665667166417"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tKR-uH-gAG">
-            <objects>
-                <viewController id="4hW-6b-xTT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="mzK-eT-7GQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="qr code boundary" translatesAutoresizingMaskIntoConstraints="NO" id="zo5-VP-Sr8">
-                                <rect key="frame" x="87" y="233" width="201" height="201"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="idp-kA-3yB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qS3-va-kUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="581.60000000000002" y="170.46476761619192"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="Hmw-tb-O4P">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="7ie-wP-O9z" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2uH-44-Fdk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1414" y="-500"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="cS0-3J-eZj">
             <objects>
-                <viewController id="UOx-gy-EE3" sceneMemberID="viewController">
+                <viewController id="UOx-gy-EE3" customClass="PromptViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DWm-YU-aAR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="qr code boundary" translatesAutoresizingMaskIntoConstraints="NO" id="r5h-25-90c">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="qr code boundary" translatesAutoresizingMaskIntoConstraints="NO" id="r5h-25-90c">
                                 <rect key="frame" x="87" y="233" width="201" height="201"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="r5h-25-90c" secondAttribute="height" multiplier="1:1" id="u33-sW-1ID"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCAN COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-Dw-BzC">
-                                <rect key="frame" x="108" y="146" width="158" height="79"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-Dw-BzC">
+                                <rect key="frame" x="108" y="146" width="159" height="79"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="yFh-JV-FoV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="17"/>
                                 <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRESS &amp; HOLD TO SCAN" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fJ-hz-vD5">
+                                <rect key="frame" x="108" y="537" width="159" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Dx6-21-SeL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="17"/>
+                                <color key="textColor" red="0.96353933828637328" green="1" blue="0.95080288421749592" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your favorite part about this class?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFg-1h-CWU">
+                                <rect key="frame" x="34" y="245" width="306" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="330" id="ufn-eI-K4E"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="39"/>
+                                <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="r5h-25-90c" firstAttribute="top" secondItem="VGV-Dw-BzC" secondAttribute="bottom" constant="8" id="3ip-SS-R5l"/>
+                            <constraint firstItem="0fJ-hz-vD5" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="5MJ-4v-0iu"/>
+                            <constraint firstAttribute="bottom" secondItem="EFg-1h-CWU" secondAttribute="bottom" constant="92" id="Awv-wK-Eou"/>
+                            <constraint firstItem="EFg-1h-CWU" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="34" id="HaQ-tr-aCF"/>
+                            <constraint firstAttribute="bottom" secondItem="r5h-25-90c" secondAttribute="bottom" constant="233" id="M9c-Oa-UbS"/>
+                            <constraint firstAttribute="trailing" secondItem="0fJ-hz-vD5" secondAttribute="trailing" constant="108" id="TGs-Js-Toa"/>
+                            <constraint firstAttribute="trailing" secondItem="EFg-1h-CWU" secondAttribute="trailing" constant="35" id="Toc-Uk-37H"/>
+                            <constraint firstAttribute="trailing" secondItem="VGV-Dw-BzC" secondAttribute="trailing" constant="108" id="Zb1-GY-4uc"/>
+                            <constraint firstAttribute="trailing" secondItem="r5h-25-90c" secondAttribute="trailing" constant="87" id="Zkw-iD-c4J"/>
+                            <constraint firstAttribute="bottom" secondItem="0fJ-hz-vD5" secondAttribute="bottom" id="gOw-z1-1nf"/>
+                            <constraint firstItem="VGV-Dw-BzC" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="whJ-6z-dKd"/>
+                            <constraint firstItem="r5h-25-90c" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="87" id="xbU-WI-AHQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="XnB-T2-cyb"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="wZF-Wl-XiF" appends="YES" id="LJa-Jf-n0q"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="hold" destination="0fJ-hz-vD5" id="0Nf-fs-Wzw"/>
+                        <outlet property="prompt" destination="EFg-1h-CWU" id="DAS-FJ-uS7"/>
+                        <outlet property="qrBoundary" destination="r5h-25-90c" id="Jhy-Lh-YPy"/>
+                        <outlet property="scannedLabel" destination="VGV-Dw-BzC" id="IfZ-Uo-K0r"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJn-AP-gJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="wZF-Wl-XiF">
+                    <connections>
+                        <action selector="enterQRMode:" destination="UOx-gy-EE3" id="3c5-kF-Mce"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1255" y="170"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="lyp-DR-UA5">
-            <objects>
-                <viewController id="duq-qS-tlR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7JC-tD-yZX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's your favorite part about this class?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFg-1h-CWU">
-                                <rect key="frame" x="34" y="168" width="306" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="39"/>
-                                <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="XEO-fz-aNv"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WZ1-Va-D28" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1957.5999999999999" y="172.26386806596702"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="LSZ-ic-QzU">
-            <objects>
-                <viewController id="Zav-HN-eJ2" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="kdL-5x-Bnf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Who do you enjoy talking to?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdB-G5-Iie">
-                                <rect key="frame" x="29" y="168" width="317" height="330"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="39"/>
-                                <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="32P-rj-6DJ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Rzv-Bd-49L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2621.5999999999999" y="173.16341829085459"/>
+            <point key="canvasLocation" x="1222" y="167"/>
         </scene>
     </scenes>
     <resources>

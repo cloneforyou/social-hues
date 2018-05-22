@@ -25,9 +25,11 @@ class DetailsBeforeControllerViewController: UIViewController {
     
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
+        print("start button called")
         let convo = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateInitialViewController() as! ConvoPageViewController
         convo.detailsDelegate = self
         self.present(convo, animated: true, completion: nil)
+        print("presented")
     }
     
     override func viewDidLoad() {
