@@ -24,6 +24,8 @@
 		37D415C220B3714B0027F357 /* Prompt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415C120B3714B0027F357 /* Prompt.storyboard */; };
 		37D415C420B388AD0027F357 /* ConvoScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415C320B388AD0027F357 /* ConvoScreenViewController.swift */; };
 		37D415C620B38FD50027F357 /* QR.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415C520B38FD50027F357 /* QR.storyboard */; };
+		37D415C820B4D69B0027F357 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415C720B4D69A0027F357 /* Contact.swift */; };
+		37D415CA20B4D7410027F357 /* InMemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415C920B4D7410027F357 /* InMemData.swift */; };
 		AA70E7F820AFA70900C36A88 /* Events.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA70E7F720AFA70900C36A88 /* Events.storyboard */; };
 		AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */; };
 		AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */; };
@@ -65,6 +67,8 @@
 		37D415C120B3714B0027F357 /* Prompt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prompt.storyboard; sourceTree = "<group>"; };
 		37D415C320B388AD0027F357 /* ConvoScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvoScreenViewController.swift; sourceTree = "<group>"; };
 		37D415C520B38FD50027F357 /* QR.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QR.storyboard; sourceTree = "<group>"; };
+		37D415C720B4D69A0027F357 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		37D415C920B4D7410027F357 /* InMemData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemData.swift; sourceTree = "<group>"; };
 		AA70E7F720AFA70900C36A88 /* Events.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Events.storyboard; sourceTree = "<group>"; };
 		AA70E7F920AFA92E00C36A88 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		AA70E7FB20AFB48C00C36A88 /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,8 @@
 			children = (
 				37D415B920B288D10027F357 /* Event.swift */,
 				37D415BB20B289810027F357 /* FakeEventStore.swift */,
+				37D415C720B4D69A0027F357 /* Contact.swift */,
+				37D415C920B4D7410027F357 /* InMemData.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +324,7 @@
 				37D415BC20B289810027F357 /* FakeEventStore.swift in Sources */,
 				37D415BE20B2A1340027F357 /* DetailsBeforeControllerViewController.swift in Sources */,
 				37D415B020B0C2D80027F357 /* AddEventView.swift in Sources */,
+				37D415C820B4D69B0027F357 /* Contact.swift in Sources */,
 				37D415B620B151550027F357 /* EventsTableViewController.swift in Sources */,
 				37D415B820B2879D0027F357 /* EventCardViewCell.swift in Sources */,
 				AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */,
@@ -326,6 +333,7 @@
 				37D415C420B388AD0027F357 /* ConvoScreenViewController.swift in Sources */,
 				37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */,
 				37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */,
+				37D415CA20B4D7410027F357 /* InMemData.swift in Sources */,
 				37D415BA20B288D10027F357 /* Event.swift in Sources */,
 				37D415C020B371360027F357 /* PromptViewController.swift in Sources */,
 				AA70E7FA20AFA92E00C36A88 /* EventsViewController.swift in Sources */,

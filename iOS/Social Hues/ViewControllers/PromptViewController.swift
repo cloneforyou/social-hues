@@ -22,6 +22,9 @@ class PromptViewController: UIViewController {
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     
+    var havePartner: Bool?
+    weak var data: InMemData?
+    
 //    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
 //
@@ -66,24 +69,29 @@ class PromptViewController: UIViewController {
     
     private func displayOrScan(touchLoc: CGPoint) {
         if touchLoc.y < self.view.bounds.height - 95 {
-            // scan mode
-            self.slideDown.isHidden = false
-            self.slideUp.isHidden = true
-            self.qrCodeFrameView?.isHidden = false
-            self.scannedLabel.isHidden = true
-            self.qrBoundary.isHidden = true
-        } else {
             // display mode
-            self.slideUp.isHidden = false
-            self.slideDown.isHidden = true
+            self.slideUp.isHidden = true
+            self.slideDown.isHidden = false
             self.qrCodeFrameView?.isHidden = true
-            self.scannedLabel.isHidden = false
+            self.scannedLabel.isHidden = true
             self.qrBoundary.isHidden = false
+        } else {
+            self.slideDown.isHidden = true
+            self.slideUp.isHidden = false
+            self.qrCodeFrameView?.isHidden = false
+            if self.havePartner == true {
+                self.scannedLabel.isHidden = false
+            }
+            self.qrBoundary.isHidden = true
+            // scan mode
+            
         }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.data = (UIApplication.shared.delegate as! AppDelegate).data
 
         // Do any additional setup after loading the view.
         self.scannedLabel.isHidden = true
@@ -92,7 +100,30 @@ class PromptViewController: UIViewController {
         self.hold.isHidden = false
         self.slideUp.isHidden = true
         self.slideDown.isHidden = true
+        self.havePartner = false
         
+        // configure qr boundary with new QR
+        self.qrBoundary.backgroundColor = .lightText
+        let w = qrBoundary.bounds.width * 0.6
+        let h = qrBoundary.bounds.height * 0.6
+        
+        let qrData = self.data?.me?.qrString().data(using: .isoLatin1, allowLossyConversion: false)
+        let filter = CIFilter(name: "CIQRCodeGenerator")
+        
+        filter?.setValue(qrData, forKey: "inputMessage")
+        filter?.setValue("Q", forKey: "inputCorrectionLevel")
+        
+        let qrCodeImage = filter?.outputImage
+        let scaleX = w / (qrCodeImage?.extent.size.width)!
+        let scaleY = h / (qrCodeImage?.extent.size.height)!
+        
+        
+        let qrImage = UIImageView(frame: CGRect(x: 0, y: 0, width: w, height: h))
+        qrImage.image = UIImage(ciImage: (qrCodeImage?.transformed(by: CGAffineTransform(scaleX: scaleX, y: scaleY)))!)
+        qrImage.translatesAutoresizingMaskIntoConstraints = true
+        qrImage.center = CGPoint(x: self.qrBoundary.bounds.midX, y: self.qrBoundary.bounds.midY)
+        qrImage.autoresizingMask = [UIViewAutoresizing.flexibleLeftMargin, UIViewAutoresizing.flexibleRightMargin, UIViewAutoresizing.flexibleTopMargin, UIViewAutoresizing.flexibleBottomMargin]
+        qrBoundary.addSubview(qrImage)
         
         var deviceDiscoverySession: AVCaptureDevice.DiscoverySession
         if AVCaptureDevice.default(.builtInDualCamera, for: .video, position: .back) != nil {
@@ -163,6 +194,14 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
         if metadataObj.type == .qr {
             let qrObj = videoPreviewLayer?.transformedMetadataObject(for: metadataObj)
             qrCodeFrameView?.frame = qrObj!.bounds
+            
+            if metadataObj.stringValue != nil {
+                if Contact.isContactString(qrString: metadataObj.stringValue!) {
+                    print(metadataObj.stringValue!)
+                    data?.friends.append(Contact(qrString: metadataObj.stringValue!))
+                }
+                
+            }
         }
     }
 }

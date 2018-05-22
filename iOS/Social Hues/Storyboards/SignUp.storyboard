@@ -35,6 +35,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="myTextFieldEditingDidEnd:" destination="4OW-aM-f4R" eventType="editingDidEnd" id="8Og-63-oKb"/>
+                                    <action selector="myTextFieldTouchDown:" destination="4OW-aM-f4R" eventType="touchDown" id="h2K-BX-G61"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NZn-qX-5n2">
                                 <rect key="frame" x="61" y="309" width="230" height="30"/>
@@ -42,6 +46,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="myTextFieldEditingDidEnd:" destination="4OW-aM-f4R" eventType="editingDidEnd" id="DaL-iK-uW4"/>
+                                    <action selector="myTextFieldTouchDown:" destination="4OW-aM-f4R" eventType="touchDown" id="sRC-yU-gBb"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iTH-jW-pDQ">
                                 <rect key="frame" x="61" y="364" width="230" height="30"/>
@@ -49,6 +57,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="myTextFieldEditingDidEnd:" destination="4OW-aM-f4R" eventType="editingDidEnd" id="KAc-YG-bpT"/>
+                                    <action selector="myTextFieldTouchDown:" destination="4OW-aM-f4R" eventType="touchDown" id="Rbz-In-FCH"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sgO-vq-Dux">
                                 <rect key="frame" x="61" y="419" width="230" height="30"/>
@@ -56,6 +68,10 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="myTextFieldEditingDidEnd:" destination="4OW-aM-f4R" eventType="editingDidEnd" id="4dV-Zw-sEB"/>
+                                    <action selector="myTextFieldTouchDown:" destination="4OW-aM-f4R" eventType="touchDown" id="Leb-L1-JSd"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Event Code (Optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hof-Rn-JY7">
                                 <rect key="frame" x="61" y="474" width="230" height="30"/>
@@ -69,25 +85,24 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
-                                    <segue destination="WUe-TL-O1k" kind="show" id="vJp-c6-eC1"/>
+                                    <action selector="signUpPressed:" destination="4OW-aM-f4R" eventType="touchUpInside" id="baF-Ru-iR7"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ht3-Mg-zOv"/>
                     </view>
+                    <connections>
+                        <outlet property="email" destination="iTH-jW-pDQ" id="Qtp-Pw-p9l"/>
+                        <outlet property="eventCode" destination="hof-Rn-JY7" id="c59-A6-Af1"/>
+                        <outlet property="lastName" destination="NZn-qX-5n2" id="twN-FC-J1o"/>
+                        <outlet property="nameField" destination="tCw-KU-TyH" id="FXm-V1-XFt"/>
+                        <outlet property="phone" destination="sgO-vq-Dux" id="Yz7-gh-EBA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zoc-7e-MF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="144.3778110944528"/>
-        </scene>
-        <!--Events-->
-        <scene sceneID="IIK-6H-Zml">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Events" referencedIdentifier="Events" id="WUe-TL-O1k" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c5n-tQ-m5J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="668" y="209"/>
         </scene>
     </scenes>
     <resources>
