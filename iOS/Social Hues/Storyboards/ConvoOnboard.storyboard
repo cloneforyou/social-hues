@@ -77,7 +77,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oRa-8j-VnT" kind="show" id="3a1-as-gBx"/>
+                                    <segue destination="oRa-8j-VnT" kind="showDetail" id="3a1-as-gBx"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="ClH-FB-APA">
@@ -124,7 +124,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oRa-8j-VnT" kind="show" id="Dlh-ds-FAe"/>
+                                    <segue destination="oRa-8j-VnT" kind="showDetail" id="Dlh-ds-FAe"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="back button" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-VC-Ipo">
@@ -195,7 +195,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oRa-8j-VnT" kind="show" id="xlG-2x-EIJ"/>
+                                    <segue destination="oRa-8j-VnT" kind="showDetail" id="xlG-2x-EIJ"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding illustration 2.5" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-jz-maJ">
@@ -260,7 +260,7 @@
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
                                 <state key="normal" title="GET STARTED"/>
                                 <connections>
-                                    <segue destination="oRa-8j-VnT" kind="show" id="Teb-eS-moj"/>
+                                    <segue destination="oRa-8j-VnT" kind="showDetail" id="Teb-eS-moj"/>
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-mJ-QIg">
@@ -279,7 +279,7 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oRa-8j-VnT" kind="show" id="fpO-oD-ewW"/>
+                                    <segue destination="oRa-8j-VnT" kind="showDetail" id="fpO-oD-ewW"/>
                                 </connections>
                             </button>
                         </subviews>

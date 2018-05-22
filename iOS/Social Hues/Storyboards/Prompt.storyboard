@@ -57,6 +57,17 @@
                                 <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3QQ-Jn-GQx">
+                                <rect key="frame" x="16" y="20" width="64" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="VbK-uc-JAk"/>
+                                    <constraint firstAttribute="width" constant="64" id="bf3-Jl-YiB"/>
+                                </constraints>
+                                <state key="normal" image="event details back button"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="UOx-gy-EE3" eventType="touchUpInside" id="nm1-5P-B7u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -65,12 +76,14 @@
                             <constraint firstItem="0fJ-hz-vD5" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="5MJ-4v-0iu"/>
                             <constraint firstAttribute="bottom" secondItem="EFg-1h-CWU" secondAttribute="bottom" constant="92" id="Awv-wK-Eou"/>
                             <constraint firstItem="EFg-1h-CWU" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="34" id="HaQ-tr-aCF"/>
+                            <constraint firstItem="3QQ-Jn-GQx" firstAttribute="top" secondItem="DWm-YU-aAR" secondAttribute="top" constant="20" id="LgI-xc-6cu"/>
                             <constraint firstAttribute="bottom" secondItem="r5h-25-90c" secondAttribute="bottom" constant="233" id="M9c-Oa-UbS"/>
                             <constraint firstAttribute="trailing" secondItem="0fJ-hz-vD5" secondAttribute="trailing" constant="108" id="TGs-Js-Toa"/>
                             <constraint firstAttribute="trailing" secondItem="EFg-1h-CWU" secondAttribute="trailing" constant="35" id="Toc-Uk-37H"/>
                             <constraint firstAttribute="trailing" secondItem="VGV-Dw-BzC" secondAttribute="trailing" constant="108" id="Zb1-GY-4uc"/>
                             <constraint firstAttribute="trailing" secondItem="r5h-25-90c" secondAttribute="trailing" constant="87" id="Zkw-iD-c4J"/>
                             <constraint firstAttribute="bottom" secondItem="0fJ-hz-vD5" secondAttribute="bottom" id="gOw-z1-1nf"/>
+                            <constraint firstItem="3QQ-Jn-GQx" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="16" id="u6v-0q-7Eq"/>
                             <constraint firstItem="VGV-Dw-BzC" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="whJ-6z-dKd"/>
                             <constraint firstItem="r5h-25-90c" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="87" id="xbU-WI-AHQ"/>
                         </constraints>
@@ -93,10 +106,11 @@
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1222" y="167"/>
+            <point key="canvasLocation" x="1221.5999999999999" y="166.8665667166417"/>
         </scene>
     </scenes>
     <resources>
+        <image name="event details back button" width="8" height="14"/>
         <image name="qr code boundary" width="201" height="201"/>
     </resources>
 </document>

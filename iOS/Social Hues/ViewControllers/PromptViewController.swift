@@ -22,6 +22,10 @@ class PromptViewController: UIViewController {
 //    required init?(coder aDecoder: NSCoder) {
 //        super.init(coder: aDecoder)
 //    }
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        //self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
+    }
     
     @IBAction func enterQRMode(_ sender: UILongPressGestureRecognizer) {
         if sender.state == .began {
