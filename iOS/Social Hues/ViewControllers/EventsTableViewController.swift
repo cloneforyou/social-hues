@@ -10,12 +10,14 @@ import UIKit
 
 protocol EventsTableViewControllerDelegate: class {
     func addEvent(code: String)
-    func eventCardWasPressed()
+    func eventCardWasPressed(_ eventPressed: Event)
     func detailsWasDismissed()
 }
 
 class EventsTableViewController : UITableViewController {
     var events = [String]()
+    var data = (UIApplication.shared.delegate as! AppDelegate).data
+    
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
         self.present(AddEventViewController(delegate:self), animated: true, completion: nil)
     }
@@ -36,8 +38,8 @@ extension EventsTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventCardViewCell
         cell.delegate = self
-        let store = FakeEventStore()
-        cell.populateVals(store.getEvent(code: events[indexPath.row]))
+        //let store = FakeEventStore()
+        cell.populateVals(data.eventDB[events[indexPath.row]]!)
         return cell
     }
 }
@@ -50,8 +52,9 @@ extension EventsTableViewController : EventsTableViewControllerDelegate {
         self.tableView.endUpdates()
     }
     
-    func eventCardWasPressed() {
-        let details = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsBefore")
+    func eventCardWasPressed(_ eventPressed: Event) {
+        let details = UIStoryboard(name: "Details", bundle: nil).instantiateViewController(withIdentifier: "DetailsBefore") as! DetailsBeforeControllerViewController
+        details.event = eventPressed
         self.navigationController?.isNavigationBarHidden = true
         self.tabBarController?.tabBar.isHidden = true
         self.navigationController?.pushViewController(details, animated: true)

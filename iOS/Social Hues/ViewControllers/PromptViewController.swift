@@ -16,6 +16,7 @@ class PromptViewController: UIViewController {
     @IBOutlet weak var prompt: UILabel!
     @IBOutlet weak var hold: UILabel!
     @IBOutlet weak var slideUp: UILabel!
+    @IBOutlet weak var partner: UILabel!
     
     @IBOutlet weak var slideDown: UILabel!
     var captureSession = AVCaptureSession()
@@ -53,6 +54,7 @@ class PromptViewController: UIViewController {
             displayOrScan(touchLoc: sender.location(in: self.view))
         } else if sender.state == .ended {
             self.scannedLabel.isHidden = true
+            self.partner?.isHidden = true
             self.qrBoundary.isHidden = true
             self.prompt.isHidden = false
             self.hold.isHidden = false
@@ -74,13 +76,17 @@ class PromptViewController: UIViewController {
             self.slideDown.isHidden = false
             self.qrCodeFrameView?.isHidden = true
             self.scannedLabel.isHidden = true
+            self.partner?.isHidden = true
             self.qrBoundary.isHidden = false
         } else {
             self.slideDown.isHidden = true
             self.slideUp.isHidden = false
-            self.qrCodeFrameView?.isHidden = false
+            
             if self.havePartner == true {
                 self.scannedLabel.isHidden = false
+                self.partner?.isHidden = false
+            } else {
+                self.qrCodeFrameView?.isHidden = false
             }
             self.qrBoundary.isHidden = true
             // scan mode
@@ -97,6 +103,7 @@ class PromptViewController: UIViewController {
         self.scannedLabel.isHidden = true
         self.qrBoundary.isHidden = true
         self.prompt.isHidden = false
+        self.prompt.transform = self.prompt.transform.rotated(by: .pi)
         self.hold.isHidden = false
         self.slideUp.isHidden = true
         self.slideDown.isHidden = true
@@ -166,10 +173,17 @@ class PromptViewController: UIViewController {
             
         }
         
+        
+        partner?.isHidden = true
+        partner?.backgroundColor = .lightText
+        
+        
+        
         self.view.layer.addSublayer(videoPreviewLayer!)
         self.view.bringSubview(toFront: self.qrCodeFrameView!)
         self.view.bringSubview(toFront: self.qrBoundary)
         self.view.bringSubview(toFront: self.scannedLabel)
+        self.view.bringSubview(toFront: self.partner!)
         self.view.bringSubview(toFront: self.slideDown)
         self.view.bringSubview(toFront: self.slideUp)
     }
@@ -184,6 +198,9 @@ class PromptViewController: UIViewController {
 
 extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
+        if self.havePartner! {
+            return
+        }
         if metadataObjects.count == 0 {
             qrCodeFrameView?.frame = CGRect.zero
             return
@@ -197,8 +214,14 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
             
             if metadataObj.stringValue != nil {
                 if Contact.isContactString(qrString: metadataObj.stringValue!) {
-                    print(metadataObj.stringValue!)
-                    data?.friends.append(Contact(qrString: metadataObj.stringValue!))
+                    self.havePartner = true
+                    self.qrCodeFrameView?.isHidden = true
+                    self.scannedLabel.isHidden = false
+                    //print(metadataObj.stringValue!)
+                    let newFriend = Contact(qrString: metadataObj.stringValue!)
+                    data?.friends.append(newFriend)
+                    self.partner?.text = "Speaking to " + newFriend.firstName
+                    self.partner?.isHidden = false
                 }
                 
             }

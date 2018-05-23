@@ -18,7 +18,6 @@
 		37D415B620B151550027F357 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B520B151540027F357 /* EventsTableViewController.swift */; };
 		37D415B820B2879D0027F357 /* EventCardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B720B2879D0027F357 /* EventCardViewCell.swift */; };
 		37D415BA20B288D10027F357 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415B920B288D10027F357 /* Event.swift */; };
-		37D415BC20B289810027F357 /* FakeEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BB20B289810027F357 /* FakeEventStore.swift */; };
 		37D415BE20B2A1340027F357 /* DetailsBeforeControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BD20B2A1340027F357 /* DetailsBeforeControllerViewController.swift */; };
 		37D415C020B371360027F357 /* PromptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415BF20B371360027F357 /* PromptViewController.swift */; };
 		37D415C220B3714B0027F357 /* Prompt.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415C120B3714B0027F357 /* Prompt.storyboard */; };
@@ -61,7 +60,6 @@
 		37D415B520B151540027F357 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		37D415B720B2879D0027F357 /* EventCardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardViewCell.swift; sourceTree = "<group>"; };
 		37D415B920B288D10027F357 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		37D415BB20B289810027F357 /* FakeEventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeEventStore.swift; sourceTree = "<group>"; };
 		37D415BD20B2A1340027F357 /* DetailsBeforeControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsBeforeControllerViewController.swift; sourceTree = "<group>"; };
 		37D415BF20B371360027F357 /* PromptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PromptViewController.swift; path = ViewControllers/PromptViewController.swift; sourceTree = SOURCE_ROOT; };
 		37D415C120B3714B0027F357 /* Prompt.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prompt.storyboard; sourceTree = "<group>"; };
@@ -126,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				37D415B920B288D10027F357 /* Event.swift */,
-				37D415BB20B289810027F357 /* FakeEventStore.swift */,
 				37D415C720B4D69A0027F357 /* Contact.swift */,
 				37D415C920B4D7410027F357 /* InMemData.swift */,
 			);
@@ -321,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14BC95E20AA4CB300AC6524 /* AppDelegate.swift in Sources */,
-				37D415BC20B289810027F357 /* FakeEventStore.swift in Sources */,
 				37D415BE20B2A1340027F357 /* DetailsBeforeControllerViewController.swift in Sources */,
 				37D415B020B0C2D80027F357 /* AddEventView.swift in Sources */,
 				37D415C820B4D69B0027F357 /* Contact.swift in Sources */,

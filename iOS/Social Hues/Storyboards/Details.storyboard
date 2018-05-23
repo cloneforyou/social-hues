@@ -96,6 +96,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="asQ-ju-Z5M"/>
                     </view>
+                    <connections>
+                        <outlet property="day" destination="Ed5-AS-MHC" id="2Da-m1-Sdr"/>
+                        <outlet property="eventName" destination="4sv-F9-kpP" id="Fzt-06-Hqm"/>
+                        <outlet property="eventTimeAndLoc" destination="W5d-3h-FnV" id="gLK-TX-GSr"/>
+                        <outlet property="month" destination="Nhw-eu-fZn" id="coK-Lt-ipS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vaa-bJ-i6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

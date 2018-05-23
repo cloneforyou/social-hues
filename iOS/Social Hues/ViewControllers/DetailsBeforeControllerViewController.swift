@@ -14,8 +14,13 @@ protocol DetailsBeforeDelegate: class {
 
 class DetailsBeforeControllerViewController: UIViewController {
     weak var delegate: EventsTableViewControllerDelegate?
+    var event: Event?
     var onboardComplete = false
 
+    @IBOutlet weak var month: UILabel!
+    @IBOutlet weak var day: UILabel!
+    @IBOutlet weak var eventName: UILabel!
+    @IBOutlet weak var eventTimeAndLoc: UILabel!
     @IBAction func backButtonPressed(_ sender: UIButton) {
         
         self.navigationController?.popViewController(animated: true)
@@ -40,8 +45,13 @@ class DetailsBeforeControllerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
+        self.month.text = self.event?.monthString
+        self.day.text = self.event?.dayString
+        self.eventName.text = self.event?.title
+        self.eventTimeAndLoc.text = self.event?.detailsString
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -15,18 +15,20 @@ class EventCardViewCell: UITableViewCell {
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var eventTitleLabel: UILabel!
     @IBOutlet weak var eventDetailsLabel: UILabel!
+    var event: Event?
     weak var delegate: EventsTableViewControllerDelegate?
     
     
     @IBAction func eventCardPressed(_ sender: UIButton) {
-        self.delegate?.eventCardWasPressed()
+        self.delegate?.eventCardWasPressed(event!)
     }
     
     func populateVals(_ event: Event) {
-        monthLabel.text = event.month
-        dayLabel.text = event.day
+        self.event = event
+        monthLabel.text = event.monthString
+        dayLabel.text = event.dayString
         eventTitleLabel.text = event.title
-        eventDetailsLabel.text = event.details
+        eventDetailsLabel.text = event.detailsString
     }
     
 //    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {

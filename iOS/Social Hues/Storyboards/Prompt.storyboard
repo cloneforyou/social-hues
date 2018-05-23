@@ -14,6 +14,9 @@
         <array key="CircularStd-Bold.otf">
             <string>CircularStd-Bold</string>
         </array>
+        <array key="CircularStd-Medium.otf">
+            <string>CircularStd-Medium</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Prompt View Controller-->
@@ -25,13 +28,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="qr code boundary" translatesAutoresizingMaskIntoConstraints="NO" id="r5h-25-90c">
-                                <rect key="frame" x="87" y="233" width="201" height="201"/>
+                                <rect key="frame" x="80" y="219" width="215" height="215"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="r5h-25-90c" secondAttribute="height" multiplier="1:1" id="u33-sW-1ID"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCAN COMPLETE" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGV-Dw-BzC">
-                                <rect key="frame" x="108" y="146" width="159" height="79"/>
+                                <rect key="frame" x="108" y="132" width="159" height="79"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="yFh-JV-FoV"/>
                                 </constraints>
@@ -91,6 +94,16 @@
                                 <color key="textColor" red="0.96353933830000005" green="1" blue="0.95080288420000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNH-rO-SO2">
+                                <rect key="frame" x="80" y="219" width="215" height="215"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JNH-rO-SO2" secondAttribute="height" multiplier="1:1" id="mHj-2B-v5I"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Medium" family="Circular Std" pointSize="27"/>
+                                <color key="textColor" red="0.96862745098039216" green="1" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -108,13 +121,16 @@
                             <constraint firstAttribute="bottom" secondItem="r5h-25-90c" secondAttribute="bottom" constant="233" id="M9c-Oa-UbS"/>
                             <constraint firstAttribute="trailing" secondItem="0fJ-hz-vD5" secondAttribute="trailing" constant="108" id="TGs-Js-Toa"/>
                             <constraint firstAttribute="trailing" secondItem="EFg-1h-CWU" secondAttribute="trailing" constant="35" id="Toc-Uk-37H"/>
+                            <constraint firstAttribute="trailing" secondItem="JNH-rO-SO2" secondAttribute="trailing" constant="80" id="X6w-fu-8z7"/>
+                            <constraint firstItem="JNH-rO-SO2" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="80" id="ZSB-eD-pQk"/>
                             <constraint firstAttribute="trailing" secondItem="VGV-Dw-BzC" secondAttribute="trailing" constant="108" id="Zb1-GY-4uc"/>
-                            <constraint firstAttribute="trailing" secondItem="r5h-25-90c" secondAttribute="trailing" constant="87" id="Zkw-iD-c4J"/>
+                            <constraint firstItem="r5h-25-90c" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="80" id="h8h-E9-aZV"/>
                             <constraint firstAttribute="bottom" secondItem="mTI-9l-uw1" secondAttribute="bottom" constant="20" id="hSB-e3-uh5"/>
                             <constraint firstAttribute="trailing" secondItem="mTI-9l-uw1" secondAttribute="trailing" constant="108" id="hek-hI-LSP"/>
                             <constraint firstItem="3QQ-Jn-GQx" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="16" id="u6v-0q-7Eq"/>
+                            <constraint firstAttribute="trailing" secondItem="r5h-25-90c" secondAttribute="trailing" constant="80" id="wFc-p3-ENe"/>
                             <constraint firstItem="VGV-Dw-BzC" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="108" id="whJ-6z-dKd"/>
-                            <constraint firstItem="r5h-25-90c" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="87" id="xbU-WI-AHQ"/>
+                            <constraint firstAttribute="bottom" secondItem="JNH-rO-SO2" secondAttribute="bottom" constant="233" id="zl6-Cy-O2D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XnB-T2-cyb"/>
                         <connections>
@@ -123,6 +139,7 @@
                     </view>
                     <connections>
                         <outlet property="hold" destination="0fJ-hz-vD5" id="0Nf-fs-Wzw"/>
+                        <outlet property="partner" destination="JNH-rO-SO2" id="2DQ-Vi-ebP"/>
                         <outlet property="prompt" destination="EFg-1h-CWU" id="DAS-FJ-uS7"/>
                         <outlet property="qrBoundary" destination="r5h-25-90c" id="Jhy-Lh-YPy"/>
                         <outlet property="scannedLabel" destination="VGV-Dw-BzC" id="IfZ-Uo-K0r"/>
