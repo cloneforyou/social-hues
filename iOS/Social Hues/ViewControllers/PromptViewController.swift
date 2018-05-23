@@ -85,9 +85,9 @@ class PromptViewController: UIViewController {
             if self.havePartner == true {
                 self.scannedLabel.isHidden = false
                 self.partner?.isHidden = false
-            } else {
-                self.qrCodeFrameView?.isHidden = false
             }
+            self.qrCodeFrameView?.isHidden = false
+            
             self.qrBoundary.isHidden = true
             // scan mode
             
@@ -198,9 +198,6 @@ class PromptViewController: UIViewController {
 
 extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        if self.havePartner! {
-            return
-        }
         if metadataObjects.count == 0 {
             qrCodeFrameView?.frame = CGRect.zero
             return
@@ -213,9 +210,9 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
             qrCodeFrameView?.frame = qrObj!.bounds
             
             if metadataObj.stringValue != nil {
-                if Contact.isContactString(qrString: metadataObj.stringValue!) {
+                if Contact.isContactString(qrString: metadataObj.stringValue!) && !self.havePartner! {
                     self.havePartner = true
-                    self.qrCodeFrameView?.isHidden = true
+                    //self.qrCodeFrameView?.isHidden = true
                     self.scannedLabel.isHidden = false
                     //print(metadataObj.stringValue!)
                     let newFriend = Contact(qrString: metadataObj.stringValue!)
