@@ -14,6 +14,9 @@
         <array key="CircularStd-Bold.otf">
             <string>CircularStd-Bold</string>
         </array>
+        <array key="CircularStd-Book.otf">
+            <string>CircularStd-Book</string>
+        </array>
         <array key="CircularStd-Medium.otf">
             <string>CircularStd-Medium</string>
         </array>
@@ -104,6 +107,16 @@
                                 <color key="textColor" red="0.96862745098039216" green="1" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHl-iI-pgh">
+                                <rect key="frame" x="329" y="41" width="23" height="19"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="23" id="29j-SO-Ufy"/>
+                                    <constraint firstAttribute="height" constant="19" id="xbg-7d-k5a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.39625060558319092" green="0.8281598687171936" blue="0.381185382604599" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -120,10 +133,12 @@
                             <constraint firstItem="3QQ-Jn-GQx" firstAttribute="top" secondItem="DWm-YU-aAR" secondAttribute="top" constant="20" id="LgI-xc-6cu"/>
                             <constraint firstAttribute="bottom" secondItem="r5h-25-90c" secondAttribute="bottom" constant="233" id="M9c-Oa-UbS"/>
                             <constraint firstAttribute="trailing" secondItem="0fJ-hz-vD5" secondAttribute="trailing" constant="108" id="TGs-Js-Toa"/>
+                            <constraint firstItem="qHl-iI-pgh" firstAttribute="top" secondItem="DWm-YU-aAR" secondAttribute="top" constant="41" id="TWe-va-m4C"/>
                             <constraint firstAttribute="trailing" secondItem="EFg-1h-CWU" secondAttribute="trailing" constant="35" id="Toc-Uk-37H"/>
                             <constraint firstAttribute="trailing" secondItem="JNH-rO-SO2" secondAttribute="trailing" constant="80" id="X6w-fu-8z7"/>
                             <constraint firstItem="JNH-rO-SO2" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="80" id="ZSB-eD-pQk"/>
                             <constraint firstAttribute="trailing" secondItem="VGV-Dw-BzC" secondAttribute="trailing" constant="108" id="Zb1-GY-4uc"/>
+                            <constraint firstAttribute="trailing" secondItem="qHl-iI-pgh" secondAttribute="trailing" constant="23" id="auI-pD-0xt"/>
                             <constraint firstItem="r5h-25-90c" firstAttribute="leading" secondItem="DWm-YU-aAR" secondAttribute="leading" constant="80" id="h8h-E9-aZV"/>
                             <constraint firstAttribute="bottom" secondItem="mTI-9l-uw1" secondAttribute="bottom" constant="20" id="hSB-e3-uh5"/>
                             <constraint firstAttribute="trailing" secondItem="mTI-9l-uw1" secondAttribute="trailing" constant="108" id="hek-hI-LSP"/>
@@ -145,6 +160,7 @@
                         <outlet property="scannedLabel" destination="VGV-Dw-BzC" id="IfZ-Uo-K0r"/>
                         <outlet property="slideDown" destination="mTI-9l-uw1" id="VyV-VJ-V2D"/>
                         <outlet property="slideUp" destination="0l3-8e-jj9" id="JVO-dJ-44M"/>
+                        <outlet property="timerLabel" destination="qHl-iI-pgh" id="QjN-93-U2l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KJn-AP-gJB" userLabel="First Responder" sceneMemberID="firstResponder"/>

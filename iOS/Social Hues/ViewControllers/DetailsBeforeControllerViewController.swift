@@ -76,8 +76,8 @@ class DetailsBeforeControllerViewController: UIViewController {
 extension DetailsBeforeControllerViewController: DetailsBeforeDelegate {
     func startPrompts() {
         onboardComplete = true
-        let prompts = UIStoryboard(name: "Prompt", bundle: nil).instantiateInitialViewController()
-        self.present(prompts!, animated: true, completion: nil)
+        let prompts = PromptViewController(event:event!)//UIStoryboard(name: "Prompt", bundle: nil).instantiateInitialViewController()
+        self.present(prompts, animated: true, completion: nil)
         //self.navigationController?.pushViewController(prompts!, animated: true)
     }
 }

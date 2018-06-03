@@ -11,12 +11,15 @@ import AVFoundation
 
 class PromptViewController: UIViewController {
     weak var delegate: ConvoPageViewController?
+    var timer: Timer?
+    var event: Event?
     @IBOutlet weak var scannedLabel: UILabel!
     @IBOutlet weak var qrBoundary: UIImageView!
     @IBOutlet weak var prompt: UILabel!
     @IBOutlet weak var hold: UILabel!
     @IBOutlet weak var slideUp: UILabel!
     @IBOutlet weak var partner: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
     
     @IBOutlet weak var slideDown: UILabel!
     var captureSession = AVCaptureSession()
@@ -26,14 +29,29 @@ class PromptViewController: UIViewController {
     var havePartner: Bool?
     weak var data: InMemData?
     
-//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-//
-//    }
-//
-//    required init?(coder aDecoder: NSCoder) {
-//        super.init(coder: aDecoder)
-//    }
+    init(event: Event) {
+        super.init(nibName: nil, bundle: nil)
+        self.event = event
+        self.timer = Timer(fire: event.date.date!, interval: 1, repeats: true, block: updateTime)
+        // initialize timer
+        // both start at event start
+        // timer fires every second to update countdown label until next round of prompts
+        // every 120 seconds refresh for next prompt (color, partner, countdown)
+        
+        
+    }
+    
+    func updateTime(timer:Timer) {
+        guard let currTimeLeft = Int(self.timerLabel.text!) else {
+            return
+        }
+        self.timerLabel.text = String(currTimeLeft - 1)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         //self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
@@ -223,5 +241,12 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
                 
             }
         }
+    }
+}
+
+// Timer related functions
+extension PromptViewController {
+    func startTimer(start: DateComponents) {
+        
     }
 }
