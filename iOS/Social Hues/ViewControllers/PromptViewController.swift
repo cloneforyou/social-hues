@@ -29,16 +29,19 @@ class PromptViewController: UIViewController {
     var havePartner: Bool?
     weak var data: InMemData?
     
-    init(event: Event) {
-        super.init(nibName: nil, bundle: nil)
-        self.event = event
-        self.timer = Timer(fire: event.date.date!, interval: 1, repeats: true, block: updateTime)
-        // initialize timer
-        // both start at event start
-        // timer fires every second to update countdown label until next round of prompts
-        // every 120 seconds refresh for next prompt (color, partner, countdown)
-        
-        
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        startTimer()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        startTimer()
+    }
+    
+    func startTimer() {
+        self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: updateTime)
+        // self.timer = Timer(fire: (event?.date.date)!, interval: 1, repeats: true, block: updateTime)
     }
     
     func updateTime(timer:Timer) {
@@ -48,10 +51,6 @@ class PromptViewController: UIViewController {
         self.timerLabel.text = String(currTimeLeft - 1)
     }
 
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         //self.navigationController?.popViewController(animated: true)
         self.dismiss(animated: true, completion: nil)
@@ -241,12 +240,5 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
                 
             }
         }
-    }
-}
-
-// Timer related functions
-extension PromptViewController {
-    func startTimer(start: DateComponents) {
-        
     }
 }
