@@ -19,6 +19,7 @@ class Icebreaker {
     var currPromptIndex: Int
     var havePartner: Bool
     var partnerName: String?
+    var onboardComplete: Bool
     
     let maxDuration = 180 // seconds
     
@@ -28,6 +29,7 @@ class Icebreaker {
         self.event = event
         self.currPromptIndex = 0
         self.havePartner = false
+        self.onboardComplete = false
     }
     
     func startTimer(name: String) {

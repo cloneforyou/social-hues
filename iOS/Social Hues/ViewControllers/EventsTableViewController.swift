@@ -46,6 +46,9 @@ extension EventsTableViewController {
 
 extension EventsTableViewController : EventsTableViewControllerDelegate {
     func addEvent(code: String) {
+        if LocalEventStore.eventDB[code] == nil {
+            return
+        }
         events.append(code)
         data.icebreakers[code] = Icebreaker(event: LocalEventStore.eventDB[code]!)
         self.tableView.beginUpdates()

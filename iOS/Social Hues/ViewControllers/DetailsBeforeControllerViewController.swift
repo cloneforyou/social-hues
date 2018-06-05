@@ -15,8 +15,8 @@ protocol DetailsBeforeDelegate: class {
 class DetailsBeforeControllerViewController: UIViewController {
     weak var delegate: EventsTableViewControllerDelegate?
     var event: Event?
-    var onboardComplete = false
-
+    var data = InMemData.getData()
+    
     @IBOutlet weak var month: UILabel!
     @IBOutlet weak var day: UILabel!
     @IBOutlet weak var eventName: UILabel!
@@ -32,7 +32,11 @@ class DetailsBeforeControllerViewController: UIViewController {
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         print("start button called")
-        if onboardComplete {
+        guard let code = event?.code, let icebreaker = data.icebreakers[code] else {
+            print("could not find code or icebreaker")
+            return
+        }
+        if  icebreaker.onboardComplete {
             startPrompts()
         } else {
             let convo = UIStoryboard(name: "ConvoOnboard", bundle: nil).instantiateInitialViewController() as! ConvoPageViewController
@@ -75,7 +79,11 @@ class DetailsBeforeControllerViewController: UIViewController {
 
 extension DetailsBeforeControllerViewController: DetailsBeforeDelegate {
     func startPrompts() {
-        onboardComplete = true
+        guard let code = event?.code, let icebreaker = data.icebreakers[code] else {
+            print("could not find code or icebreaker")
+            return
+        }
+        icebreaker.onboardComplete = true
         let prompts = UIStoryboard(name: "Prompt", bundle: nil).instantiateInitialViewController() as! PromptViewController
         prompts.event = event
         prompts.addDelegateToIcebreaker()
