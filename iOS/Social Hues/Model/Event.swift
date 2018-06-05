@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Event {
     var code: String
@@ -17,14 +18,20 @@ class Event {
     var dayString: String
     var calendar: Calendar
     var detailsString: String
+    var prompts: [String]
+    var groups: Int
+    var colors: [UIColor]
     
-    init(code: String, title: String, date: DateComponents, location: String) {
+    init(code: String, title: String, date: DateComponents, location: String, prompts: [String], groups: Int, colors: [UIColor]) {
         self.code = code
         self.title = title
         self.date = date
         self.location = location
         self.calendar = Calendar(identifier: .gregorian)
         self.monthString = ""
+        self.prompts = prompts
+        self.groups = groups
+        self.colors = colors
         
         self.dayString = String(date.day!)
         if dayString.count == 1 {
@@ -38,6 +45,7 @@ class Event {
         
         self.detailsString = String(date.hour!) + ":" + minuteString + " @" + location
         self.monthString = findMonthString(date.month!)
+        
     }
     
     func findMonthString(_ month: Int) -> String {
@@ -69,5 +77,32 @@ class Event {
         default:
             return ""
         }
+    }
+    
+    func getNextIndex(curr: Int) -> Int {
+        if curr == prompts.count {
+            return 0
+        }
+        return curr + 1
+    }
+    
+    func getNextColor(currColor: UIColor?) -> UIColor {
+        guard let notColor = currColor else {
+            return pickRandomColor()
+        }
+        
+        var next = pickRandomColor()
+        while (notColor.isEqual(next)) {
+            next = pickRandomColor()
+        }
+        return next
+    }
+    
+    func pickRandomColor() -> UIColor {
+        return colors[Int(arc4random_uniform(UInt32(colors.count)))]
+    }
+    
+    func firstColor() -> Int {
+        return 0
     }
 }

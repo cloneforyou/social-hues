@@ -39,7 +39,7 @@ extension EventsTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath) as! EventCardViewCell
         cell.delegate = self
         //let store = FakeEventStore()
-        cell.populateVals(data.eventDB[events[indexPath.row]]!)
+        cell.populateVals(LocalEventStore.eventDB[events[indexPath.row]]!)
         return cell
     }
 }
@@ -47,6 +47,7 @@ extension EventsTableViewController {
 extension EventsTableViewController : EventsTableViewControllerDelegate {
     func addEvent(code: String) {
         events.append(code)
+        data.icebreakers[code] = Icebreaker(event: LocalEventStore.eventDB[code]!)
         self.tableView.beginUpdates()
         self.tableView.insertRows(at: [IndexPath(row: events.count - 1, section: 0)], with: UITableViewRowAnimation.top)
         self.tableView.endUpdates()

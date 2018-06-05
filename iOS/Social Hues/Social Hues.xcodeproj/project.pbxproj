@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3709A8E520C5FDAA0078CACF /* Icebreaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709A8E420C5FDAA0078CACF /* Icebreaker.swift */; };
+		3709A8E720C646960078CACF /* LocalEventStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3709A8E620C646960078CACF /* LocalEventStore.swift */; };
 		37D4159B20ACFDA70027F357 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D4159A20ACFDA70027F357 /* Onboarding.storyboard */; };
 		37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */; };
 		37D415A420AEB43F0027F357 /* ConvoOnboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D415A320AEB43F0027F357 /* ConvoOnboard.storyboard */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3709A8E420C5FDAA0078CACF /* Icebreaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icebreaker.swift; sourceTree = "<group>"; };
+		3709A8E620C646960078CACF /* LocalEventStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalEventStore.swift; sourceTree = "<group>"; };
 		37D4159A20ACFDA70027F357 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		37D415A120AE8ABB0027F357 /* OnboardPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardPageViewController.swift; sourceTree = "<group>"; };
 		37D415A320AEB43F0027F357 /* ConvoOnboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConvoOnboard.storyboard; sourceTree = "<group>"; };
@@ -126,6 +130,8 @@
 				37D415B920B288D10027F357 /* Event.swift */,
 				37D415C720B4D69A0027F357 /* Contact.swift */,
 				37D415C920B4D7410027F357 /* InMemData.swift */,
+				3709A8E420C5FDAA0078CACF /* Icebreaker.swift */,
+				3709A8E620C646960078CACF /* LocalEventStore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -323,11 +329,13 @@
 				37D415C820B4D69B0027F357 /* Contact.swift in Sources */,
 				37D415B620B151550027F357 /* EventsTableViewController.swift in Sources */,
 				37D415B820B2879D0027F357 /* EventCardViewCell.swift in Sources */,
+				3709A8E720C646960078CACF /* LocalEventStore.swift in Sources */,
 				AA70E7FC20AFB48C00C36A88 /* AddEventViewController.swift in Sources */,
 				37D415A620AEB55A0027F357 /* ConvoPageViewController.swift in Sources */,
 				37D415B320B0D0F20027F357 /* UIColorEx.swift in Sources */,
 				37D415C420B388AD0027F357 /* ConvoScreenViewController.swift in Sources */,
 				37D415AC20AEB66F0027F357 /* SignUpViewController.swift in Sources */,
+				3709A8E520C5FDAA0078CACF /* Icebreaker.swift in Sources */,
 				37D415A220AE8ABB0027F357 /* OnboardPageViewController.swift in Sources */,
 				37D415CA20B4D7410027F357 /* InMemData.swift in Sources */,
 				37D415BA20B288D10027F357 /* Event.swift in Sources */,

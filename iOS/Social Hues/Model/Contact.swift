@@ -19,6 +19,7 @@ class Contact {
         self.lastName = last
         self.email = email
         self.phone = phone
+        
     }
     
     convenience init(qrString: String) {

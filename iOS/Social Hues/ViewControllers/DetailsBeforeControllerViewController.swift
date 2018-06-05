@@ -78,6 +78,7 @@ extension DetailsBeforeControllerViewController: DetailsBeforeDelegate {
         onboardComplete = true
         let prompts = UIStoryboard(name: "Prompt", bundle: nil).instantiateInitialViewController() as! PromptViewController
         prompts.event = event
+        prompts.addDelegateToIcebreaker()
         self.present(prompts, animated: true, completion: nil)
         //self.navigationController?.pushViewController(prompts!, animated: true)
     }

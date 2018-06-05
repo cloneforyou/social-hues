@@ -9,6 +9,11 @@
 import UIKit
 import AVFoundation
 
+protocol PromptViewControllerDelegate: class {
+    func updateTimeLabel(time: Int)
+    func startNewPrompt(_ newColor: UIColor, newPrompt: String)
+}
+
 class PromptViewController: UIViewController {
     weak var delegate: ConvoPageViewController?
     var timer: Timer?
@@ -27,28 +32,24 @@ class PromptViewController: UIViewController {
     var qrCodeFrameView: UIView?
     
     var havePartner: Bool?
-    weak var data: InMemData?
+    weak var data = InMemData.getData()
     
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        startTimer()
-    }
+//    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+//        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+//        addDelegate()
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        super.init(coder: aDecoder)
+//        addDelegate()
+//    }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        startTimer()
-    }
-    
-    func startTimer() {
-        self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: updateTime)
-        // self.timer = Timer(fire: (event?.date.date)!, interval: 1, repeats: true, block: updateTime)
-    }
-    
-    func updateTime(timer:Timer) {
-        guard let currTimeLeft = Int(self.timerLabel.text!) else {
+    func addDelegateToIcebreaker() {
+        guard let code = event?.code, let icebreaker = data?.icebreakers[code] else {
+            print("could not find code or icebreaker")
             return
         }
-        self.timerLabel.text = String(currTimeLeft - 1)
+        icebreaker.delegate = self
     }
 
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -114,7 +115,13 @@ class PromptViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.data = (UIApplication.shared.delegate as! AppDelegate).data
+        guard let code = event?.code, let data = data, let icebreaker = data.icebreakers[code] else {
+            print("could not find code or icebreaker")
+            return
+        }
+        self.view.backgroundColor = icebreaker.currColor
+        self.timerLabel.text = String(icebreaker.currTimeLeft)
+        self.prompt.text = event?.prompts[icebreaker.currPromptIndex]
 
         // Do any additional setup after loading the view.
         self.scannedLabel.isHidden = true
@@ -240,5 +247,16 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
                 
             }
         }
+    }
+}
+
+extension PromptViewController: PromptViewControllerDelegate {
+    func updateTimeLabel(time: Int) {
+        self.timerLabel.text = String(time)
+    }
+    
+    func startNewPrompt(_ newColor: UIColor, newPrompt: String) {
+        self.view.backgroundColor = newColor
+        self.prompt.text = newPrompt
     }
 }
