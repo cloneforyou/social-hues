@@ -32,54 +32,8 @@
                 <viewController storyboardIdentifier="ConvoOne" useStoryboardIdentifierAsRestorationIdentifier="YES" id="eVZ-QT-Kbv" customClass="ConvoScreenViewController" customModule="Social_Hues" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZM9-mp-4Sj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" translatesAutoresizingMaskIntoConstraints="NO" id="JXB-AI-oip">
-                                <rect key="frame" x="29" y="80" width="317" height="507"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="SrI-wF-n2A">
-                                <rect key="frame" x="279" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="start event onboarding illustration 1" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-SY-THZ">
-                                <rect key="frame" x="83" y="161" width="197" height="232"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Insert your phone face out into the pouch provided" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvg-Sk-1qh">
-                                <rect key="frame" x="73" y="390" width="238" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination filled" translatesAutoresizingMaskIntoConstraints="NO" id="tTi-tc-JTc">
-                                <rect key="frame" x="97" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="nmP-sy-JjR">
-                                <rect key="frame" x="218" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="UVo-cX-mJS">
-                                <rect key="frame" x="516" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lli-Li-vUq">
-                                <rect key="frame" x="259" y="98" width="67" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
-                                <state key="normal" title="SKIP">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="skipPressed:" destination="eVZ-QT-Kbv" eventType="touchUpInside" id="Khm-vt-zaa"/>
-                                </connections>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="ClH-FB-APA">
-                                <rect key="frame" x="156" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk1-SN-LbP">
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                 <constraints>
@@ -91,11 +45,57 @@
                                     <action selector="backPressed:" destination="eVZ-QT-Kbv" eventType="touchUpInside" id="5vi-D7-v7i"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JXB-AI-oip">
+                                <rect key="frame" x="29" y="50" width="317" height="507"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="bJf-9F-ajK"/>
+                                    <constraint firstAttribute="height" constant="507" id="soH-l6-ocj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="start event onboarding illustration 1" translatesAutoresizingMaskIntoConstraints="NO" id="Z81-SY-THZ">
+                                <rect key="frame" x="29" y="50" width="317" height="428"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="428" id="mFO-2v-wpS"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuC-Vb-evE">
+                                <rect key="frame" x="243" y="50" width="103" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="X61-IC-vM5"/>
+                                    <constraint firstAttribute="width" constant="103" id="XEt-Zc-GV3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipPressed:" destination="udv-9w-6BH" eventType="touchUpInside" id="eTq-dg-JaQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert your phone face out into the pouch provided" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvg-Sk-1qh">
+                                <rect key="frame" x="29" y="388" width="317" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="eya-1L-sU8"/>
+                                    <constraint firstAttribute="height" constant="90" id="hgs-GH-cnr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.37032115459999998" green="0.78009969000000001" blue="0.37268182640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Mvg-Sk-1qh" firstAttribute="width" secondItem="Z81-SY-THZ" secondAttribute="width" id="0td-9l-Zvk"/>
+                            <constraint firstItem="JXB-AI-oip" firstAttribute="centerX" secondItem="ZM9-mp-4Sj" secondAttribute="centerX" id="13F-N1-Wlg"/>
+                            <constraint firstItem="Z81-SY-THZ" firstAttribute="centerX" secondItem="JXB-AI-oip" secondAttribute="centerX" id="4fm-D8-Vxo"/>
+                            <constraint firstItem="JXB-AI-oip" firstAttribute="top" secondItem="hcf-iv-lRZ" secondAttribute="top" constant="30" id="D2L-5l-9zL" userLabel="start event onboarding card bg.top = Safe Area.top + 35"/>
+                            <constraint firstItem="kuC-Vb-evE" firstAttribute="trailing" secondItem="JXB-AI-oip" secondAttribute="trailing" id="HNO-bd-gtu"/>
+                            <constraint firstItem="kuC-Vb-evE" firstAttribute="top" secondItem="JXB-AI-oip" secondAttribute="top" id="JCL-ae-X6q"/>
+                            <constraint firstItem="JXB-AI-oip" firstAttribute="top" secondItem="Z81-SY-THZ" secondAttribute="top" id="UTj-7F-kvt"/>
                             <constraint firstItem="pk1-SN-LbP" firstAttribute="leading" secondItem="ZM9-mp-4Sj" secondAttribute="leading" id="kfO-DN-AvO"/>
                             <constraint firstItem="pk1-SN-LbP" firstAttribute="top" secondItem="ZM9-mp-4Sj" secondAttribute="top" id="qFf-Vh-sND"/>
+                            <constraint firstItem="Mvg-Sk-1qh" firstAttribute="centerX" secondItem="JXB-AI-oip" secondAttribute="centerX" id="sZ5-PM-2qk"/>
+                            <constraint firstItem="Mvg-Sk-1qh" firstAttribute="bottom" secondItem="Z81-SY-THZ" secondAttribute="bottom" id="wcJ-T8-Xgl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="hcf-iv-lRZ"/>
                     </view>
@@ -112,48 +112,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" translatesAutoresizingMaskIntoConstraints="NO" id="dTV-JC-s8G">
-                                <rect key="frame" x="31" y="80" width="317" height="507"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" translatesAutoresizingMaskIntoConstraints="NO" id="dTV-JC-s8G">
+                                <rect key="frame" x="29" y="50" width="317" height="507"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Find someone with the same color as you to start a conversation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGg-z0-Qxd">
-                                <rect key="frame" x="70" y="400" width="238" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find someone with the same color as you to start a conversation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGg-z0-Qxd">
+                                <rect key="frame" x="29" y="403" width="317" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="s4a-Cp-S8W"/>
+                                    <constraint firstAttribute="width" constant="317" id="wf2-DI-A3N"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="start event onboarding illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="OVv-5n-6GB">
-                                <rect key="frame" x="93" y="159" width="194" height="205"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-Zy-8Zf">
-                                <rect key="frame" x="259" y="98" width="67" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
-                                <state key="normal" title="SKIP">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="skipPressed:" destination="udv-9w-6BH" eventType="touchUpInside" id="AnL-b1-9po"/>
-                                </connections>
-                            </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="mNh-TN-Mab">
-                                <rect key="frame" x="97" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination filled" translatesAutoresizingMaskIntoConstraints="NO" id="48N-DB-eQk">
-                                <rect key="frame" x="156" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="9th-uS-csv">
-                                <rect key="frame" x="218" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="oTC-Og-0un">
-                                <rect key="frame" x="279" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzR-Py-g4E">
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                 <constraints>
@@ -162,11 +133,41 @@
                                 </constraints>
                                 <state key="normal" image="event details back button"/>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" image="start event onboarding illustration 2" translatesAutoresizingMaskIntoConstraints="NO" id="OVv-5n-6GB">
+                                <rect key="frame" x="29" y="50" width="317" height="428"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="428" id="0as-5p-h50"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tjG-Zy-8Zf">
+                                <rect key="frame" x="243" y="50" width="103" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="1Qa-qE-0gR"/>
+                                    <constraint firstAttribute="width" constant="103" id="YBI-VU-dfz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
+                                <state key="normal" title="SKIP">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="skipPressed:" destination="udv-9w-6BH" eventType="touchUpInside" id="AnL-b1-9po"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.37032115459442139" green="0.78009968996047974" blue="0.37268182635307312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="VGg-z0-Qxd" firstAttribute="bottom" secondItem="OVv-5n-6GB" secondAttribute="bottom" id="3AL-ja-nND"/>
+                            <constraint firstItem="VGg-z0-Qxd" firstAttribute="width" secondItem="OVv-5n-6GB" secondAttribute="width" id="3v1-BY-By4"/>
+                            <constraint firstItem="tjG-Zy-8Zf" firstAttribute="top" secondItem="dTV-JC-s8G" secondAttribute="top" id="8OX-E7-6rF"/>
+                            <constraint firstItem="dTV-JC-s8G" firstAttribute="top" secondItem="HNb-K4-Dcf" secondAttribute="top" constant="30" id="Bfm-sc-umv" userLabel="start event onboarding card bg.top = Safe Area.top + 35"/>
+                            <constraint firstItem="tjG-Zy-8Zf" firstAttribute="trailing" secondItem="dTV-JC-s8G" secondAttribute="trailing" id="C3D-hC-tNA"/>
                             <constraint firstItem="EzR-Py-g4E" firstAttribute="top" secondItem="hog-Am-lYH" secondAttribute="top" id="H0p-AB-gWs"/>
+                            <constraint firstItem="OVv-5n-6GB" firstAttribute="top" secondItem="dTV-JC-s8G" secondAttribute="top" id="PqA-ff-FtI"/>
                             <constraint firstItem="EzR-Py-g4E" firstAttribute="leading" secondItem="hog-Am-lYH" secondAttribute="leading" id="bZ8-ES-m3X"/>
+                            <constraint firstItem="OVv-5n-6GB" firstAttribute="centerX" secondItem="dTV-JC-s8G" secondAttribute="centerX" id="m9L-71-TcT"/>
+                            <constraint firstItem="dTV-JC-s8G" firstAttribute="centerX" secondItem="hog-Am-lYH" secondAttribute="centerX" id="nR3-vW-0eo"/>
+                            <constraint firstItem="VGg-z0-Qxd" firstAttribute="centerX" secondItem="dTV-JC-s8G" secondAttribute="centerX" id="q2Q-cY-aze"/>
+                            <constraint firstItem="tjG-Zy-8Zf" firstAttribute="top" secondItem="dTV-JC-s8G" secondAttribute="top" id="r9J-Lh-kuY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HNb-K4-Dcf"/>
                     </view>
@@ -183,24 +184,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" translatesAutoresizingMaskIntoConstraints="NO" id="g7j-vY-zIM">
-                                <rect key="frame" x="29" y="80" width="317" height="507"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" translatesAutoresizingMaskIntoConstraints="NO" id="g7j-vY-zIM">
+                                <rect key="frame" x="29" y="50" width="317" height="507"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination filled" translatesAutoresizingMaskIntoConstraints="NO" id="jic-aY-YZa">
-                                <rect key="frame" x="218" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press &amp; hold to display your QR code and scan eachother's code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-iD-owq">
-                                <rect key="frame" x="70" y="393" width="238" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Press &amp; hold to display your QR code and scan each other's code" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sJ-iD-owq">
+                                <rect key="frame" x="29" y="393" width="317" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="B0L-i4-fOz"/>
+                                    <constraint firstAttribute="height" constant="75" id="NZ1-34-ils"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5u-fq-t1W">
-                                <rect key="frame" x="259" y="98" width="67" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5u-fq-t1W">
+                                <rect key="frame" x="243" y="50" width="103" height="58"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="NhF-bJ-ApK"/>
+                                    <constraint firstAttribute="width" constant="103" id="TZk-8s-fBF"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
                                 <state key="normal" title="SKIP">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -209,22 +211,6 @@
                                     <action selector="skipPressed:" destination="K3c-8V-dwS" eventType="touchUpInside" id="FhD-4O-h6N"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding illustration 2.5" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-jz-maJ">
-                                <rect key="frame" x="92" y="167" width="191" height="201"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="lAw-2n-081">
-                                <rect key="frame" x="97" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="PBx-46-UEJ">
-                                <rect key="frame" x="156" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="Xnm-z9-zEf">
-                                <rect key="frame" x="279" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8b-U8-NQL">
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                 <constraints>
@@ -233,11 +219,25 @@
                                 </constraints>
                                 <state key="normal" image="event details back button"/>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding illustration 4" translatesAutoresizingMaskIntoConstraints="NO" id="jdh-jz-maJ">
+                                <rect key="frame" x="29" y="68" width="317" height="322"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="428" id="ozn-QK-23R"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.37032115459999998" green="0.78009969000000001" blue="0.37268182640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="D8b-U8-NQL" firstAttribute="leading" secondItem="rlV-zJ-J6k" secondAttribute="leading" id="Hc0-2d-6eq"/>
+                            <constraint firstItem="g7j-vY-zIM" firstAttribute="top" secondItem="XC7-Xt-7EM" secondAttribute="top" constant="30" id="IPB-hA-gyx" userLabel="start event onboarding card bg.top = Safe Area.top + 35"/>
                             <constraint firstItem="D8b-U8-NQL" firstAttribute="top" secondItem="rlV-zJ-J6k" secondAttribute="top" id="Q72-8N-lY8"/>
+                            <constraint firstItem="g7j-vY-zIM" firstAttribute="centerX" secondItem="jdh-jz-maJ" secondAttribute="centerX" id="XTU-R8-euq"/>
+                            <constraint firstItem="6sJ-iD-owq" firstAttribute="width" secondItem="jdh-jz-maJ" secondAttribute="width" id="aUT-Pc-mOj"/>
+                            <constraint firstItem="z5u-fq-t1W" firstAttribute="top" secondItem="g7j-vY-zIM" secondAttribute="top" id="hJg-cg-gud"/>
+                            <constraint firstItem="g7j-vY-zIM" firstAttribute="centerX" secondItem="rlV-zJ-J6k" secondAttribute="centerX" id="syz-UB-PhL"/>
+                            <constraint firstItem="z5u-fq-t1W" firstAttribute="trailing" secondItem="g7j-vY-zIM" secondAttribute="trailing" id="xHM-GX-3OT"/>
+                            <constraint firstItem="6sJ-iD-owq" firstAttribute="bottom" secondItem="jdh-jz-maJ" secondAttribute="bottom" id="xj3-ME-mlp"/>
+                            <constraint firstItem="6sJ-iD-owq" firstAttribute="centerX" secondItem="jdh-jz-maJ" secondAttribute="centerX" id="yss-1O-Hc6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XC7-Xt-7EM"/>
                     </view>
@@ -254,46 +254,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" translatesAutoresizingMaskIntoConstraints="NO" id="bnN-O4-b2Z">
-                                <rect key="frame" x="29" y="80" width="317" height="507"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="start event onboarding card bg" translatesAutoresizingMaskIntoConstraints="NO" id="bnN-O4-b2Z">
+                                <rect key="frame" x="29" y="50" width="317" height="507"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="uc8-2Z-HaS">
-                                <rect key="frame" x="218" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="NBk-Mr-qsW">
-                                <rect key="frame" x="156" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="start event onboarding illustration 3" translatesAutoresizingMaskIntoConstraints="NO" id="ess-3Y-iEI">
-                                <rect key="frame" x="82" y="150" width="225" height="219"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follow the prompts shown on the other person's phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-A2-HH0">
-                                <rect key="frame" x="89" y="377" width="210" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Follow the prompts shown on the other person's phone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyQ-A2-HH0">
+                                <rect key="frame" x="29" y="377" width="317" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="317" id="7dh-S7-YDL"/>
+                                    <constraint firstAttribute="height" constant="75" id="QU5-b8-ZCt"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="CircularStd-Book" family="Circular Std" pointSize="18"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYp-fD-Ouy">
-                                <rect key="frame" x="117" y="460" width="154" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYp-fD-Ouy">
+                                <rect key="frame" x="137" y="460" width="101" height="30"/>
                                 <fontDescription key="fontDescription" name="CircularStd-Bold" family="Circular Std" pointSize="15"/>
                                 <state key="normal" title="GET STARTED"/>
                                 <connections>
                                     <action selector="getStartedPressed:" destination="cxk-8M-gLC" eventType="touchUpInside" id="zz2-PE-3FH"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="pagination no fill" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-mJ-QIg">
-                                <rect key="frame" x="97" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="pagination filled" translatesAutoresizingMaskIntoConstraints="NO" id="VHl-kA-K4Q">
-                                <rect key="frame" x="279" y="519" width="10" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dEp-TN-xHU">
                                 <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                 <constraints>
@@ -302,28 +283,40 @@
                                 </constraints>
                                 <state key="normal" image="event details back button"/>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" image="start event onboarding illustration 3" translatesAutoresizingMaskIntoConstraints="NO" id="ess-3Y-iEI">
+                                <rect key="frame" x="29" y="123" width="317" height="246"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="428" id="6Ty-68-fFM"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.37032115459999998" green="0.78009969000000001" blue="0.37268182640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="qyQ-A2-HH0" firstAttribute="width" secondItem="ess-3Y-iEI" secondAttribute="width" id="0jL-xD-ZMY"/>
+                            <constraint firstItem="bnN-O4-b2Z" firstAttribute="top" secondItem="6vd-Wa-GOs" secondAttribute="top" constant="30" id="AaJ-mJ-eEN" userLabel="start event onboarding card bg.top = Safe Area.top + 35"/>
                             <constraint firstItem="dEp-TN-xHU" firstAttribute="leading" secondItem="ZK4-aE-Anv" secondAttribute="leading" id="CsL-CC-yM7"/>
+                            <constraint firstItem="bnN-O4-b2Z" firstAttribute="centerX" secondItem="ZK4-aE-Anv" secondAttribute="centerX" id="Kia-ih-Rx8"/>
+                            <constraint firstItem="aYp-fD-Ouy" firstAttribute="top" secondItem="qyQ-A2-HH0" secondAttribute="bottom" id="R7H-sK-NXe"/>
+                            <constraint firstItem="qyQ-A2-HH0" firstAttribute="bottom" secondItem="ess-3Y-iEI" secondAttribute="bottom" id="YOs-73-eDJ"/>
+                            <constraint firstItem="qyQ-A2-HH0" firstAttribute="centerX" secondItem="bnN-O4-b2Z" secondAttribute="centerX" id="cvm-So-PeY"/>
+                            <constraint firstItem="aYp-fD-Ouy" firstAttribute="centerX" secondItem="bnN-O4-b2Z" secondAttribute="centerX" id="mpX-Zi-JV1"/>
                             <constraint firstItem="dEp-TN-xHU" firstAttribute="top" secondItem="ZK4-aE-Anv" secondAttribute="top" id="mqK-89-pHK"/>
+                            <constraint firstItem="ess-3Y-iEI" firstAttribute="centerX" secondItem="bnN-O4-b2Z" secondAttribute="centerX" id="xuK-QW-F8f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6vd-Wa-GOs"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chU-eE-Zcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1337" y="1881"/>
+            <point key="canvasLocation" x="1336.8" y="1880.5097451274364"/>
         </scene>
     </scenes>
     <resources>
         <image name="event details back button" width="8" height="14"/>
-        <image name="pagination filled" width="12" height="12"/>
-        <image name="pagination no fill" width="12" height="12"/>
         <image name="start event onboarding card bg" width="317" height="507"/>
         <image name="start event onboarding illustration 1" width="197" height="207"/>
         <image name="start event onboarding illustration 2" width="191" height="210"/>
-        <image name="start event onboarding illustration 2.5" width="191" height="201"/>
         <image name="start event onboarding illustration 3" width="191" height="217"/>
+        <image name="start event onboarding illustration 4" width="191" height="201"/>
     </resources>
 </document>
