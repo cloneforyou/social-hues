@@ -15,10 +15,10 @@ class LocalEventStore {
                           "What excites you most about your project?",
                           "What changes would you suggest to the course?",
                           "What challenges did you have in your project?"]
-    static let colors = [UIColor.red, UIColor.green, UIColor.blue]
+    static let colors = [UIColor.red, UIColor.blue]
     static let eventDB = ["0": Event(code: "0",
                                      title: "CSE 441 Showcase",
-                                     date: DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: nil, era: nil, year: 2018, month: 6, day: 5, hour: 1, minute: 57, second: nil, nanosecond: nil, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil),
+                                     date: DateComponents(calendar: Calendar(identifier: .gregorian), timeZone: nil, era: nil, year: 2018, month: 6, day: 5, hour: 2, minute: 30, second: nil, nanosecond: nil, weekday: nil, weekdayOrdinal: nil, quarter: nil, weekOfMonth: nil, weekOfYear: nil, yearForWeekOfYear: nil),
                                      location: "Ode 141",
                                      prompts: prompts,
                                      groups: 3,

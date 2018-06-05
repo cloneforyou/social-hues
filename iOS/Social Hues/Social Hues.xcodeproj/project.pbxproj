@@ -114,11 +114,11 @@
 			children = (
 				B14BC96120AA4CB300AC6524 /* Main.storyboard */,
 				B14BC96620AA4CB800AC6524 /* LaunchScreen.storyboard */,
-				37D4159A20ACFDA70027F357 /* Onboarding.storyboard */,
 				37D415A320AEB43F0027F357 /* ConvoOnboard.storyboard */,
 				B102A3FF20C61A7E004B7C9B /* ContactHistory.storyboard */,
 				37D415A920AEB6510027F357 /* SignUp.storyboard */,
 				AA70E7F720AFA70900C36A88 /* Events.storyboard */,
+				37D4159A20ACFDA70027F357 /* Onboarding.storyboard */,
 				B1AEDB6F20B27D4D009FCF5B /* Details.storyboard */,
 				B1AEDB6D20B2350A009FCF5B /* ExtraSettings.storyboard */,
 				37D415C120B3714B0027F357 /* Prompt.storyboard */,

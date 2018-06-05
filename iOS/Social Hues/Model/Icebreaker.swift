@@ -21,7 +21,7 @@ class Icebreaker {
     var partnerName: String?
     var onboardComplete: Bool
     
-    let maxDuration = 180 // seconds
+    let maxDuration = 60 // seconds
     
     init(event: Event) {
         self.currColor = event.getNextColor(currColor: nil)
