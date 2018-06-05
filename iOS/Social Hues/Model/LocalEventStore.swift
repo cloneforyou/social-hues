@@ -11,9 +11,10 @@ import UIKit
 
 class LocalEventStore {
     static let prompts = ["What's your favorite part about this class?",
-                              "What was the most challenging aspect of your design and implementation process?",
-                              "What excites you most about your project?",
-                              "What changes would you suggest to the course?"]
+                          "What did you learn from the other majors?",
+                          "What excites you most about your project?",
+                          "What changes would you suggest to the course?",
+                          "What challenges did you have in your project?"]
     static let colors = [UIColor.red, UIColor.green, UIColor.blue]
     static let eventDB = ["0": Event(code: "0",
                                      title: "CSE 441 Showcase",

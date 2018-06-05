@@ -17,6 +17,8 @@ class Icebreaker {
     var event: Event
     weak var delegate: PromptViewControllerDelegate?
     var currPromptIndex: Int
+    var havePartner: Bool
+    var partnerName: String?
     
     let maxDuration = 180 // seconds
     
@@ -25,8 +27,17 @@ class Icebreaker {
         self.currTimeLeft = maxDuration
         self.event = event
         self.currPromptIndex = 0
-        self.timer = Timer(fire: event.date.date!, interval: 1, repeats: true, block: updateTime)
-        RunLoop.current.add(timer!, forMode: .commonModes)
+        self.havePartner = false
+    }
+    
+    func startTimer(name: String) {
+//        self.timer = Timer(fire: event.date.date!, interval: 1, repeats: true, block: updateTime)
+//        RunLoop.current.add(timer!, forMode: .commonModes)
+        if self.timer == nil {
+            self.timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: updateTime)
+            self.havePartner = true
+            self.partnerName = name
+        }
     }
     
     func updateTime(timer: Timer) {
@@ -36,7 +47,17 @@ class Icebreaker {
             currColor = self.event.getNextColor(currColor: currColor)
             currPromptIndex = self.event.getNextIndex(curr: currPromptIndex)
             delegate?.startNewPrompt(currColor, newPrompt: self.event.prompts[currPromptIndex])
+            endTimer()
         }
         delegate?.updateTimeLabel(time: currTimeLeft)
+    }
+    
+    func endTimer() {
+        if self.timer != nil {
+            self.timer?.invalidate()
+            self.timer = nil
+            self.havePartner = false
+            self.partnerName = nil
+        }
     }
 }

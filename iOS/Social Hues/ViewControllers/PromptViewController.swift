@@ -31,8 +31,8 @@ class PromptViewController: UIViewController {
     var videoPreviewLayer: AVCaptureVideoPreviewLayer?
     var qrCodeFrameView: UIView?
     
-    var havePartner: Bool?
     weak var data = InMemData.getData()
+    weak var icebreaker: Icebreaker?
     
 //    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
 //        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -49,7 +49,8 @@ class PromptViewController: UIViewController {
             print("could not find code or icebreaker")
             return
         }
-        icebreaker.delegate = self
+        self.icebreaker = icebreaker
+        self.icebreaker?.delegate = self
     }
 
     @IBAction func backButtonPressed(_ sender: UIButton) {
@@ -100,7 +101,7 @@ class PromptViewController: UIViewController {
             self.slideDown.isHidden = true
             self.slideUp.isHidden = false
             
-            if self.havePartner == true {
+            if self.icebreaker?.havePartner == true {
                 self.scannedLabel.isHidden = false
                 self.partner?.isHidden = false
             }
@@ -122,6 +123,10 @@ class PromptViewController: UIViewController {
         self.view.backgroundColor = icebreaker.currColor
         self.timerLabel.text = String(icebreaker.currTimeLeft)
         self.prompt.text = event?.prompts[icebreaker.currPromptIndex]
+        
+        if (self.icebreaker?.havePartner)! {
+            self.partner.text = "Speaking to " + (self.icebreaker?.partnerName)!
+        }
 
         // Do any additional setup after loading the view.
         self.scannedLabel.isHidden = true
@@ -131,7 +136,6 @@ class PromptViewController: UIViewController {
         self.hold.isHidden = false
         self.slideUp.isHidden = true
         self.slideDown.isHidden = true
-        self.havePartner = false
         
         // configure qr boundary with new QR
         self.qrBoundary.backgroundColor = .lightText
@@ -234,8 +238,7 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
             qrCodeFrameView?.frame = qrObj!.bounds
             
             if metadataObj.stringValue != nil {
-                if Contact.isContactString(qrString: metadataObj.stringValue!) && !self.havePartner! {
-                    self.havePartner = true
+                if Contact.isContactString(qrString: metadataObj.stringValue!) && !(self.icebreaker?.havePartner)! {
                     //self.qrCodeFrameView?.isHidden = true
                     self.scannedLabel.isHidden = false
                     //print(metadataObj.stringValue!)
@@ -243,6 +246,7 @@ extension PromptViewController: AVCaptureMetadataOutputObjectsDelegate {
                     data?.friends.append(newFriend)
                     self.partner?.text = "Speaking to " + newFriend.firstName
                     self.partner?.isHidden = false
+                    self.icebreaker?.startTimer(name: newFriend.firstName)
                 }
                 
             }
@@ -258,5 +262,7 @@ extension PromptViewController: PromptViewControllerDelegate {
     func startNewPrompt(_ newColor: UIColor, newPrompt: String) {
         self.view.backgroundColor = newColor
         self.prompt.text = newPrompt
+        self.scannedLabel.isHidden = true
+        self.partner.isHidden = true
     }
 }

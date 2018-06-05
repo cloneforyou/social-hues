@@ -80,7 +80,7 @@ class Event {
     }
     
     func getNextIndex(curr: Int) -> Int {
-        if curr == prompts.count {
+        if curr == prompts.count - 1 {
             return 0
         }
         return curr + 1
